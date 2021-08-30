@@ -8,52 +8,133 @@
   <link rel="stylesheet" href="./stylesheets/main.css">
 </head>
 <body>
-  Our Company
-  Locations
-  Contact
-  
-  Award-winning custom designs and digital branding solutions
 
-  With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, 
-  and engaging brand experiences. Find out more about our services.
-  
-  Learn more
-  
-  Web Design
-  View Projects
-  
-  App Design
-  View Projects
-  
-  Graphic Design
-  View Projects
-  
-  Passionate
-  Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge
-  art, design, and technology into exciting new solutions.
-  
-  Resourceful
-  Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer
-  collaboration. It guarantees superior results that fulfill our clients’ needs.
-  
-  Friendly
-  We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we
-  strive to give them the best experience a company can provide.
-  
-  Let’s talk about your project
-  Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.
-  Get in touch
-  
-  Our company
-  Locations
-  Contact
-  
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-  
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
+  <div class="container">
+    <header class="header">
+      <span class="header__logo"><img src="./assets/shared/desktop/logo-dark.png" alt=""></span>
+      <!-- navigation -->
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav--item">Our Company</li>
+          <li class="nav--item">Locations</li>
+          <li class="nav--item">Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main section -->
+    <main class="main">
+      <section class="landing__complex">
+        <div class="landing__desc">
+          <h1 class="heading-one">
+            Award-winning custom designs and digital branding solutions
+          </h1>
+          <p class="paragraph-content">
+            With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, 
+            and engaging brand experiences. Find out more about our services.
+          </p>
+          <button class="btn">Learn more</button>
+        </div>
+        <span class="landing__photo">
+          <img src="./assets/home/desktop/image-hero-phone.png" alt="">
+        </span>
+
+      </section>
+
+      <section class="services">
+        <div class="services__web">
+          <h2 class="services-title">Web Design</h2>
+          <a href="" class="services--action">view projects</a>
+        </div>
+        <div class="services__app">
+          <h2 class="services-title">App Design</h2>
+          <a href="" class="services--action">view projects</a>
+        </div>
+        <div class="services__web">
+          <h2 class="services-title">Graphic Design</h2>
+          <a href="" class="services--action">view projects</a>
+        </div>
+      </section>
+
+      <section class="detail">
+        <div class="detail">
+          <span class="detail__img">
+            <img src="./assets/home/desktop/illustration-passionate.svg" alt="">
+          </span>
+          <p class="detail__title">Passionate</p>
+          <p class="paragraph-content">
+            Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge
+            art, design, and technology into exciting new solutions.
+          </p>
+        </div>
+        <div class="detail">
+          <span class="detail__img">
+            <img src="./assets/home/desktop/illustration-resourceful.svg" alt="">
+          </span>
+          <p class="detail__title">Resourceful</p>
+          <p class="paragraph-content">
+            Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer
+            collaboration. It guarantees superior results that fulfill our clients’ needs.
+          </p>
+        </div>
+        <div class="detail">
+          <span class="detail__img">
+            <img src="./assets/home/desktop/illustration-friendly.svg" alt="">
+          </span>
+          <p class="detail__title">friendly</p>
+          <p class="paragraph-content">
+            We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we
+            strive to give them the best experience a company can provide.         
+          </p>
+        </div>
+      </section>
+
+
+      <section class="contact--link">
+        <div class="contact--link__desc">
+          <h2 class="contact--link contact--link__title">Let’s talk about your project</h2>
+          <p class="paragraph-content">Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.
+          </p>
+        </div>
+        <button class="btn">Get in touch</button>
+      </section>
+
+    </main>
+  </div>
+  <footer class="footer">
+    <span class="header__logo"><img src="./assets/shared/desktop/logo-light.png" alt=""></span>
+    <!-- navigation -->
+    <nav class="footer__nav">
+      <ul class="footer__nav__list">
+        <li class="footer--nav--item">Our Company</li>
+        <li class="footer--nav--item">Locations</li>
+        <li class="footer--nav--item">Contact</li>
+      </ul>
+    </nav>
+
+    <div class="footer__connect">
+      <div class="connect__one">
+        <p class="company__name">Designo Central Office</p>
+        <p class="company__address">3886 Wellington Street</p>
+        <p class="company__address">Toronto, Ontario M9C 3J5</p>
+      </div>
+
+      <div class="connect__two">
+        <p class="contact__office">Contact Us (Central Office)</p>
+        <p class="phone__number">P : +1 253-863-8967</p>
+        <p class="email__address">M : contact@designo.co</p>
+      </div>
+    </div>
+
+    <div class="connect__social">
+      <span><img class="social-media" src="./assets/shared/desktop/icon-facebook.svg" alt=""></span>
+      <span><img class="social-media" src="./assets/shared/desktop/icon-youtube.svg" alt=""></span>
+      <span><img class="social-media" src="./assets/shared/desktop/icon-twitter.svg" alt=""></span>
+      <span><img class="social-media" src="./assets/shared/desktop/icon-pinterest.svg" alt=""></span>
+      <span><img class="social-media" src="./assets/shared/desktop/icon-instagram.svg" alt=""></span>
+    </div>
+  </footer>
+
+  <script src="./scripts/main.js"></script>
 </body>
 </html>
