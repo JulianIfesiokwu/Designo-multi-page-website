@@ -8,9 +8,11 @@
   <link rel="stylesheet" href="./stylesheets/main.css">
 </head>
 <body>
+
   <div class="container">
+    <!-- Header -->
     <header class="header">
-      <span class="header__logo"><img src="./assets/shared/desktop/logo-dark.png" alt=""></span>
+      <span class="header__logo"><img src="./assets/shared/desktop/logo-dark.png" alt="logo"></span>
       <!-- navigation -->
       <nav class="header__nav">
         <ul class="nav__list">
@@ -34,10 +36,10 @@
       </section>
 
       <!-- App Portfolio -->
-      <section class="app-portfolio">
-        <div class="app-portfolio__card">
+      <section class="portfolio">
+        <div class="portfolio__card">
           <span class="card__banner">
-            <img src="./assets/app-design/desktop/image-airfilter.jpg" alt="">
+            <img src="./assets/app-design/desktop/image-airfilter.jpg" alt="image-card-photo">
           </span>
           <div class="card__info">
             <h2 class="card__title">Air Filter</h2>
@@ -47,9 +49,9 @@
           </div>
         </div>
 
-        <div class="app-portfolio__card">
+        <div class="portfolio__card">
           <span class="card__banner">
-            <img src="./assets/app-design/desktop/image-eyecam.jpg" alt="">
+            <img src="./assets/app-design/desktop/image-eyecam.jpg" alt="image-card-photo">
           </span>
           <div class="card__info">
             <h2 class="card__title">Eyecam</h2>
@@ -59,9 +61,9 @@
           </div>
         </div>
 
-        <div class="app-portfolio__card">
+        <div class="portfolio__card">
           <span class="card__banner">
-            <img src="./assets/app-design/desktop/image-faceit.jpg" alt="">
+            <img src="./assets/app-design/desktop/image-faceit.jpg" alt="image-card-photo">
           </span>
           <div class="card__info">
             <h2 class="card__title">Faceit</h2>
@@ -71,9 +73,9 @@
           </div>
         </div>
 
-        <div class="app-portfolio__card">
+        <div class="portfolio__card">
           <span class="card__banner">
-            <img src="./assets/app-design/desktop/image-todo.jpg" alt="">
+            <img src="./assets/app-design/desktop/image-todo.jpg" alt="image-card-photo">
           </span>
           <div class="card__info">
             <h2 class="card__title">Todo</h2>
@@ -83,9 +85,9 @@
           </div>
         </div>
 
-        <div class="app-portfolio__card">
+        <div class="portfolio__card">
           <span class="card__banner">
-            <img src="./assets/app-design/desktop/image-loopstudios.jpg" alt="">
+            <img src="./assets/app-design/desktop/image-loopstudios.jpg" alt="image-card-photo">
           </span>
           <div class="card__info">
             <h2 class="card__title">Loopstudios</h2>
@@ -98,13 +100,13 @@
 
       <!-- Services -->
       <section class="services">
-        <div class="services__app">
+        <div class="service">
           <h2 class="services-title">Web Design</h2>
-          <a href="" class="services--action">view projects</a>
+          <a href="" class="services--action">view projects<span><img src="./assets/shared/desktop/icon-right-arrow.svg" alt=""></span></a>
         </div>
-        <div class="services__web">
+        <div class="service">
           <h2 class="services-title">Graphic Design</h2>
-          <a href="" class="services--action">view projects</a>
+          <a href="" class="services--action">view projects<span><img src="./assets/shared/desktop/icon-right-arrow.svg" alt=""></span></a>
         </div>
       </section>
 
@@ -119,8 +121,11 @@
       </section>
 
     </main>
+  </div>
 
-    <footer class="footer">
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="row-one">
       <span class="footer__logo"><img src="./assets/shared/desktop/logo-light.png" alt=""></span>
       <!-- navigation -->
       <nav class="footer__nav">
@@ -130,7 +135,9 @@
           <li class="footer__nav--item"><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
-  
+    </div>
+
+    <div class="row-two">
       <div class="footer__connect">
         <div class="connect__one">
           <p class="company__name">Designo Central Office</p>
@@ -152,8 +159,10 @@
         <span><img class="social-media" src="./assets/shared/desktop/icon-pinterest.svg" alt=""></span>
         <span><img class="social-media" src="./assets/shared/desktop/icon-instagram.svg" alt=""></span>
       </div>
-    </footer>
-  </div>
+    </div>
+
+  </footer>
+
 
 </body>
 </html>

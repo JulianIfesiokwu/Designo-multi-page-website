@@ -10,8 +10,9 @@
 <body>
 
   <div class="container">
+    <!-- Header -->
     <header class="header">
-      <span class="header__logo"><img src="./assets/shared/desktop/logo-dark.png" alt=""></span>
+      <span class="header__logo"><img src="./assets/shared/desktop/logo-dark.png" alt="logo"></span>
       <!-- navigation -->
       <nav class="header__nav">
         <ul class="nav__list">
@@ -24,6 +25,8 @@
 
     <!-- main section -->
     <main class="main">
+
+      <!-- Landing -->
       <section class="landing__complex">
         <div class="landing__desc">
           <h1 class="heading-one">
@@ -41,21 +44,23 @@
 
       </section>
 
+      <!-- Services -->
       <section class="services">
         <div class="services__web">
           <h2 class="services-title">Web Design</h2>
-          <a href="" class="services--action">view projects</a>
+          <a href="" class="services--action">view projects<span><img src="./assets/shared/desktop/icon-right-arrow.svg" alt=""></span></a>
         </div>
         <div class="services__app">
           <h2 class="services-title">App Design</h2>
-          <a href="" class="services--action">view projects</a>
+          <a href="" class="services--action">view projects<span><img src="./assets/shared/desktop/icon-right-arrow.svg" alt=""></span></a>
         </div>
         <div class="services__web">
           <h2 class="services-title">Graphic Design</h2>
-          <a href="" class="services--action">view projects</a>
+          <a href="" class="services--action">view projects<span><img src="./assets/shared/desktop/icon-right-arrow.svg" alt=""></span></a>
         </div>
       </section>
 
+      <!-- Details -->
       <section class="detail">
         <div class="detail">
           <span class="detail__img">
@@ -101,38 +106,45 @@
 
     </main>
   </div>
+
+  <!-- Footer -->
   <footer class="footer">
-    <span class="footer__logo"><img src="./assets/shared/desktop/logo-light.png" alt=""></span>
-    <!-- navigation -->
-    <nav class="footer__nav">
-      <ul class="footer__nav__list">
-        <li class="footer__nav--item"><a href="./about.html">Company</a></li>
-        <li class="footer__nav--item"><a href="./locations.html">Locations</a></li>
-        <li class="footer__nav--item"><a href="./contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="row-one">
+      <span class="footer__logo"><img src="./assets/shared/desktop/logo-light.png" alt=""></span>
+      <!-- navigation -->
+      <nav class="footer__nav">
+        <ul class="footer__nav__list">
+          <li class="footer__nav--item"><a href="./about.html">Company</a></li>
+          <li class="footer__nav--item"><a href="./locations.html">Locations</a></li>
+          <li class="footer__nav--item"><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
-    <div class="footer__connect">
-      <div class="connect__one">
-        <p class="company__name">Designo Central Office</p>
-        <p class="company__address">3886 Wellington Street</p>
-        <p class="company__address">Toronto, Ontario M9C 3J5</p>
+    <div class="row-two">
+      <div class="footer__connect">
+        <div class="connect__one">
+          <p class="company__name">Designo Central Office</p>
+          <p class="company__address">3886 Wellington Street</p>
+          <p class="company__address">Toronto, Ontario M9C 3J5</p>
+        </div>
+  
+        <div class="connect__two">
+          <p class="contact__office">Contact Us (Central Office)</p>
+          <p class="phone__number">P : +1 253-863-8967</p>
+          <p class="email__address">M : contact@designo.co</p>
+        </div>
       </div>
-
-      <div class="connect__two">
-        <p class="contact__office">Contact Us (Central Office)</p>
-        <p class="phone__number">P : +1 253-863-8967</p>
-        <p class="email__address">M : contact@designo.co</p>
+  
+      <div class="connect__social">
+        <span><img class="social-media" src="./assets/shared/desktop/icon-facebook.svg" alt=""></span>
+        <span><img class="social-media" src="./assets/shared/desktop/icon-youtube.svg" alt=""></span>
+        <span><img class="social-media" src="./assets/shared/desktop/icon-twitter.svg" alt=""></span>
+        <span><img class="social-media" src="./assets/shared/desktop/icon-pinterest.svg" alt=""></span>
+        <span><img class="social-media" src="./assets/shared/desktop/icon-instagram.svg" alt=""></span>
       </div>
     </div>
 
-    <div class="connect__social">
-      <span><img class="social-media" src="./assets/shared/desktop/icon-facebook.svg" alt=""></span>
-      <span><img class="social-media" src="./assets/shared/desktop/icon-youtube.svg" alt=""></span>
-      <span><img class="social-media" src="./assets/shared/desktop/icon-twitter.svg" alt=""></span>
-      <span><img class="social-media" src="./assets/shared/desktop/icon-pinterest.svg" alt=""></span>
-      <span><img class="social-media" src="./assets/shared/desktop/icon-instagram.svg" alt=""></span>
-    </div>
   </footer>
 
   <script src="./scripts/main.js"></script>

@@ -3,96 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">  
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
+  <link rel="stylesheet" href="./stylesheets/main.css">
 </head>
 <body>
   <div class="container">
+    <!-- Header -->
     <header class="header">
-      <span class="header__logo"><img src="./assets/shared/desktop/logo-dark.png" alt=""></span>
+      <span class="header__logo"><img src="./assets/shared/desktop/logo-dark.png" alt="logo"></span>
       <!-- navigation -->
       <nav class="header__nav">
         <ul class="nav__list">
-          <li class="nav--item">Our Company</li>
-          <li class="nav--item">Locations</li>
-          <li class="nav--item">Contact</li>
+          <li class="nav--item"><a href="./about.html">Company</a></li>
+          <li class="nav--item"><a href="./locations.html">Locations</a></li>
+          <li class="nav--item active"><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- main section -->
     <main class="main">
+      <!-- Landing -->
       <section class="landing__complex">
-        
+        <div class="landing__desc">
+          <h1 class="heading-one">
+            Contact us
+          </h1>
+          <p class="paragraph-content">
+            Ready to take it to the next level? Let’s talk about your project or idea and find out how 
+            we can help your business grow. If you are looking for unique digital experiences that’s 
+            relatable to your users, drop us a line.
+          </p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-us">
+          <form class="contact__form">
+            <input type="text" id="name" placeholder="name">
+            <input type="email" id="email" placeholder="Email Address">
+            <input type="number" id="phone" placeholder="Phone">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+
+            <button class="btn">Submit</button>
+
+          </form>
+        </div>
+
+      </section>
+
+      <!-- About locations -->
+      <section class="about__location">
+        <div class="location">
+          <span class="location__img">
+            <img src="./assets/shared/desktop/illustration-canada.svg" alt="">
+          </span>
+          <button class="btn"><a href="">See location</a></button>
+        </div>
+        <div class="location">
+          <span class="location__img">
+            <img src="./assets/shared/desktop/illustration-australia.svg" alt="">
+          </span>
+          <button class="btn"><a href="">See location</a></button>
+        </div>
+        <div class="location">
+          <span class="location__img">
+            <img src="./assets/shared/desktop/illustration-united-kingdom.svg" alt="">
+          </span>
+          <button class="btn"><a href="">See location</a></button>
+        </div>
+
       </section>
     </main>
   </div>
 
+  <!-- Footer -->
   <footer class="footer">
-    <span class="footer__logo"><img src="./assets/shared/desktop/logo-light.png" alt=""></span>
-    <!-- navigation -->
-    <nav class="footer__nav">
-      <ul class="footer__nav__list">
-        <li class="footer__nav--item"><a href="./about.html">Company</a></li>
-        <li class="footer__nav--item"><a href="./locations.html">Locations</a></li>
-        <li class="footer__nav--item"><a href="./contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="row-one">
+      <span class="footer__logo"><img src="./assets/shared/desktop/logo-light.png" alt=""></span>
+      <!-- navigation -->
+      <nav class="footer__nav">
+        <ul class="footer__nav__list">
+          <li class="footer__nav--item"><a href="./about.html">Company</a></li>
+          <li class="footer__nav--item"><a href="./locations.html">Locations</a></li>
+          <li class="footer__nav--item"><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
-    <div class="footer__connect">
-      <div class="connect__one">
-        <p class="company__name">Designo Central Office</p>
-        <p class="company__address">3886 Wellington Street</p>
-        <p class="company__address">Toronto, Ontario M9C 3J5</p>
+    <div class="row-two">
+      <div class="footer__connect">
+        <div class="connect__one">
+          <p class="company__name">Designo Central Office</p>
+          <p class="company__address">3886 Wellington Street</p>
+          <p class="company__address">Toronto, Ontario M9C 3J5</p>
+        </div>
+  
+        <div class="connect__two">
+          <p class="contact__office">Contact Us (Central Office)</p>
+          <p class="phone__number">P : +1 253-863-8967</p>
+          <p class="email__address">M : contact@designo.co</p>
+        </div>
       </div>
-
-      <div class="connect__two">
-        <p class="contact__office">Contact Us (Central Office)</p>
-        <p class="phone__number">P : +1 253-863-8967</p>
-        <p class="email__address">M : contact@designo.co</p>
+  
+      <div class="connect__social">
+        <span><img class="social-media" src="./assets/shared/desktop/icon-facebook.svg" alt=""></span>
+        <span><img class="social-media" src="./assets/shared/desktop/icon-youtube.svg" alt=""></span>
+        <span><img class="social-media" src="./assets/shared/desktop/icon-twitter.svg" alt=""></span>
+        <span><img class="social-media" src="./assets/shared/desktop/icon-pinterest.svg" alt=""></span>
+        <span><img class="social-media" src="./assets/shared/desktop/icon-instagram.svg" alt=""></span>
       </div>
     </div>
 
-    <div class="connect__social">
-      <span><img class="social-media" src="./assets/shared/desktop/icon-facebook.svg" alt=""></span>
-      <span><img class="social-media" src="./assets/shared/desktop/icon-youtube.svg" alt=""></span>
-      <span><img class="social-media" src="./assets/shared/desktop/icon-twitter.svg" alt=""></span>
-      <span><img class="social-media" src="./assets/shared/desktop/icon-pinterest.svg" alt=""></span>
-      <span><img class="social-media" src="./assets/shared/desktop/icon-instagram.svg" alt=""></span>
-    </div>
   </footer>
-  Contact us
-  Ready to take it to the next level? Let’s talk about your project or idea and find out how 
-  we can help your business grow. If you are looking for unique digital experiences that’s 
-  relatable to your users, drop us a line.
 
-  Name
-  Email address
-  Phone
-  Your message
-  Submit
-
-  Canada
-  See location
-
-  Australia
-  See location
-
-  United Kingdom
-  See location
-
-  Our company
-  Locations
-  Contact
-
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
 </body>
 </html>

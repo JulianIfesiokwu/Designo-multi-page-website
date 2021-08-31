@@ -9,8 +9,9 @@
 </head>
 <body>
   <div class="container">
+    <!-- Header -->
     <header class="header">
-      <span class="header__logo"><img src="./assets/shared/desktop/logo-dark.png" alt=""></span>
+      <span class="header__logo"><img src="./assets/shared/desktop/logo-dark.png" alt="logo"></span>
       <!-- navigation -->
       <nav class="header__nav">
         <ul class="nav__list">
@@ -29,14 +30,13 @@
         <h1 class="landing__title">Web design</h1>
         <p class="landing__desc">
           We build websites that serve as powerful marketing tools and bring memorable brand experiences.</p>
-
       </section>
 
       <!-- Web Portfolio -->
-      <section class="web-portfolio">
-        <div class="web-portfolio__card">
+      <section class="portfolio">
+        <div class="portfolio__card">
           <span class="card__banner">
-            <img src="./assets/web-design/desktop/image-express.jpg" alt="">
+            <img src="./assets/web-design/desktop/image-express.jpg" alt="image-card-photo">
           </span>
           <div class="card__info">
             <h2 class="card__title">Express</h2>
@@ -46,9 +46,9 @@
           </div>
         </div>
 
-        <div class="web-portfolio__card">
+        <div class="portfolio__card">
           <span class="card__banner">
-            <img src="./assets/web-design/desktop/image-transfer.jpg" alt="">
+            <img src="./assets/web-design/desktop/image-transfer.jpg" alt="image-card-photo">
           </span>
           <div class="card__info">
             <h2 class="card__title">Transfer</h2>
@@ -58,9 +58,9 @@
           </div>
         </div>
 
-        <div class="web-portfolio__card">
+        <div class="portfolio__card">
           <span class="card__banner">
-            <img src="./assets/web-design/desktop/image-photon.jpg" alt="">
+            <img src="./assets/web-design/desktop/image-photon.jpg" alt="image-card-photo">
           </span>
           <div class="card__info">
             <h2 class="card__title">Photon</h2>
@@ -70,9 +70,9 @@
           </div>
         </div>
 
-        <div class="web-portfolio__card">
+        <div class="portfolio__card">
           <span class="card__banner">
-            <img src="./assets/web-design/desktop/image-builder.jpg" alt="">
+            <img src="./assets/web-design/desktop/image-builder.jpg" alt="image-card-photo">
           </span>
           <div class="card__info">
             <h2 class="card__title">Builder</h2>
@@ -82,9 +82,9 @@
           </div>
         </div>
 
-        <div class="web-portfolio__card">
+        <div class="portfolio__card">
           <span class="card__banner">
-            <img src="./assets/web-design/desktop/image-blogr.jpg" alt="">
+            <img src="./assets/web-design/desktop/image-blogr.jpg" alt="image-card-photo">
           </span>
           <div class="card__info">
             <h2 class="card__title">Blogr</h2>
@@ -94,9 +94,9 @@
           </div>
         </div>
 
-        <div class="web-portfolio__card">
+        <div class="portfolio__card">
           <span class="card__banner">
-            <img src="./assets/web-design/desktop/image-camp.jpg" alt="">
+            <img src="./assets/web-design/desktop/image-camp.jpg" alt="image-card-photo">
           </span>
           <div class="card__info">
             <h2 class="card__title">Camp</h2>
@@ -110,13 +110,13 @@
 
       <!-- Services -->
       <section class="services">
-        <div class="services__app">
+        <div class="service">
           <h2 class="services-title">App Design</h2>
-          <a href="" class="services--action">view projects</a>
+          <a href="" class="services--action">view projects<span><img src="./assets/shared/desktop/icon-right-arrow.svg" alt=""></span></a>
         </div>
-        <div class="services__web">
+        <div class="service">
           <h2 class="services-title">Graphic Design</h2>
-          <a href="" class="services--action">view projects</a>
+          <a href="" class="services--action">view projects<span><img src="./assets/shared/desktop/icon-right-arrow.svg" alt=""></span></a>
         </div>
       </section>
 
@@ -132,50 +132,46 @@
 
     </main>
   </div>
+
+  <!-- Footer -->
   <footer class="footer">
-    <span class="footer__logo"><img src="./assets/shared/desktop/logo-light.png" alt=""></span>
-    <!-- navigation -->
-    <nav class="footer__nav">
-      <ul class="footer__nav__list">
-        <li class="footer__nav--item"><a href="./about.html">Company</a></li>
-        <li class="footer__nav--item"><a href="./locations.html">Locations</a></li>
-        <li class="footer__nav--item"><a href="./contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="row-one">
+      <span class="footer__logo"><img src="./assets/shared/desktop/logo-light.png" alt=""></span>
+      <!-- navigation -->
+      <nav class="footer__nav">
+        <ul class="footer__nav__list">
+          <li class="footer__nav--item"><a href="./about.html">Company</a></li>
+          <li class="footer__nav--item"><a href="./locations.html">Locations</a></li>
+          <li class="footer__nav--item"><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
-    <div class="footer__connect">
-      <div class="connect__one">
-        <p class="company__name">Designo Central Office</p>
-        <p class="company__address">3886 Wellington Street</p>
-        <p class="company__address">Toronto, Ontario M9C 3J5</p>
+    <div class="row-two">
+      <div class="footer__connect">
+        <div class="connect__one">
+          <p class="company__name">Designo Central Office</p>
+          <p class="company__address">3886 Wellington Street</p>
+          <p class="company__address">Toronto, Ontario M9C 3J5</p>
+        </div>
+  
+        <div class="connect__two">
+          <p class="contact__office">Contact Us (Central Office)</p>
+          <p class="phone__number">P : +1 253-863-8967</p>
+          <p class="email__address">M : contact@designo.co</p>
+        </div>
       </div>
-
-      <div class="connect__two">
-        <p class="contact__office">Contact Us (Central Office)</p>
-        <p class="phone__number">P : +1 253-863-8967</p>
-        <p class="email__address">M : contact@designo.co</p>
+  
+      <div class="connect__social">
+        <span><img class="social-media" src="./assets/shared/desktop/icon-facebook.svg" alt=""></span>
+        <span><img class="social-media" src="./assets/shared/desktop/icon-youtube.svg" alt=""></span>
+        <span><img class="social-media" src="./assets/shared/desktop/icon-twitter.svg" alt=""></span>
+        <span><img class="social-media" src="./assets/shared/desktop/icon-pinterest.svg" alt=""></span>
+        <span><img class="social-media" src="./assets/shared/desktop/icon-instagram.svg" alt=""></span>
       </div>
     </div>
 
-    <div class="connect__social">
-      <span><img class="social-media" src="./assets/shared/desktop/icon-facebook.svg" alt=""></span>
-      <span><img class="social-media" src="./assets/shared/desktop/icon-youtube.svg" alt=""></span>
-      <span><img class="social-media" src="./assets/shared/desktop/icon-twitter.svg" alt=""></span>
-      <span><img class="social-media" src="./assets/shared/desktop/icon-pinterest.svg" alt=""></span>
-      <span><img class="social-media" src="./assets/shared/desktop/icon-instagram.svg" alt=""></span>
-    </div>
   </footer>
-
-  App Design
-  View Projects
-  
-  Graphic Design
-  View Projects
-  
-  Let’s talk about your project
-  Ready to take it to the next level? Contact us today and find out how our expertise can help 
-  your business grow.
-  Get in touch
   
 </body>
 </html>
