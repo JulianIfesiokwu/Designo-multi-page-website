@@ -1,1 +1,174 @@
-@import './config'
+@import './config';
+
+.container {
+    width: 100%;
+}
+
+.header {
+    margin: 2rem 0;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    .header__logo img{
+        width: 80%;
+        display: inline-block;
+        vertical-align: bottom;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    // .hamburger-menu img{
+    //     vertical-align: baseline;
+    // }
+}
+
+.landing__complex {
+    background: $peach url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) no-repeat top right;
+    color: $white;
+    text-align: center;
+    padding: 5rem 2rem 0rem 2rem;
+}
+
+.landing__title {
+    line-height: 36px;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.landing__content {
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 15px;
+    margin-bottom: 2rem;
+}
+
+.landing__photo img{
+    width: 100%;
+    display: block;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background-color: $white;
+    color: $darkGrey;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;   
+}
+
+.services__app, .services__web, .services__graphic {
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 327px;
+    height: 250px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services {
+    margin: 3rem 0 3rem 0;
+    padding: 0rem 2rem;
+
+    .services-title {
+        color: $white;
+        line-height: 36px;
+        font-size: 28px;
+        letter-spacing: 1.4px;
+        font-weight: 500;
+    }
+
+    .services--action {
+        color: $white;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 5px;
+        text-decoration: none;
+
+        span img {
+            margin-left: 1rem;
+        }
+    }
+
+    .services__web {
+        background: url(../assets/home/mobile/image-web-design.jpg) no-repeat center;
+    }
+
+    .services__app {
+        background: url(../assets/home/mobile/image-app-design.jpg) no-repeat center;
+    }
+
+    .services__graphic {
+        background: url(../assets/home/mobile/image-graphic-design.jpg) no-repeat center;
+    }
+}
+
+.details {
+    margin: 3rem 0 3rem 0;
+    padding: 0rem 2rem;
+
+    .detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }   
+}
+
+.detail__title {
+    text-transform: uppercase;
+    line-height: 26px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin: 2rem 0;
+}
+
+.detail-content {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.contact-link {
+    margin: 3rem 2rem 3rem 2rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    color: $white;
+    border-radius: 10px;
+    background: $peach;
+
+    .contact--link__title {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 2rem;
+    }
+
+    .contact--link__content {
+        font-weight: 400;
+        line-height: 25px;
+        font-size: 15px;
+        margin-bottom: 2rem;
+    }
+}
+
+.footer {
+    background: $darkGrey;
+}
+
+.footer__logo img {
+    width: 70%;
+}
