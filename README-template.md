@@ -104,6 +104,8 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture
 
 https://www.educative.io/edpresso/how-to-crop-an-image-in-css
 
+https://www.youtube.com/watch?v=k4taTzkhzHc - I watched this video to understand stacking index and using position:relative to help me position the contact link above the footer.
+
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author

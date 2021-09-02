@@ -4,6 +4,12 @@
     width: 100%;
 }
 
+// To create overlap of footer
+.main {
+    position: relative;
+    z-index: 3;
+}
+
 .header {
     margin: 2rem 0;
     padding: 0 2rem;
@@ -144,6 +150,7 @@
 
 .contact-link {
     margin: 3rem 2rem 0 2rem;
+    margin-bottom: -10rem;
     padding: 3rem 2rem;
     text-align: center;
     color: $white;
@@ -166,13 +173,98 @@
 }
 
 .footer {
-    background: $darkGrey;
-    // margin-top: -10rem;
+    background: hsl(270, 3%, 11%);
+    position: relative;
+    z-index: 1;
+    padding-top: 13rem;      
 }
 
-.footer__logo img {
-    width: 70%;
+.row-one {
+    .footer__logo img {
+        width: 70%;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    .footer__nav__list {
+        text-align: center;
+    }
+
+    .footer__nav__list li{
+        margin-bottom: 2rem;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 2px;
+    }
+
+    .footer__nav__list a{
+        text-align: center;
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    
 }
+
+.connect__one {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    .company__name {
+        font-size: 16px;
+        line-height: 26px;
+        color: $LightGrey;
+        font-weight: bold;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+
+    .company__address {
+        font-size: 16px;
+        line-height: 26px;
+        color: $LightGrey;
+        font-weight: 400;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+}
+
+.connect__two {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    .contact__office {
+        font-size: 16px;
+        line-height: 26px;
+        color: $LightGrey;
+        font-weight: bold;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+
+    .phone__number, .email__address {
+        font-size: 16px;
+        line-height: 26px;
+        color: $LightGrey;
+        font-weight: 400;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+}
+
+.connect__social {
+    padding-bottom: 2rem;
+    text-align: center;
+
+    .social-media {
+        margin-right: 1rem;
+    }
+}
+
+
+
 
 // Web design
 .landing {

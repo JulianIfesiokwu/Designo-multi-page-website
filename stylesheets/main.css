@@ -15,6 +15,11 @@
   width: 100%;
 }
 
+.main {
+  position: relative;
+  z-index: 3;
+}
+
 .header {
   margin: 2rem 0;
   padding: 0 2rem;
@@ -173,6 +178,7 @@
 
 .contact-link {
   margin: 3rem 2rem 0 2rem;
+  margin-bottom: -10rem;
   padding: 3rem 2rem;
   text-align: center;
   color: white;
@@ -195,11 +201,91 @@
 }
 
 .footer {
-  background: #323036;
+  background: #1c1b1d;
+  position: relative;
+  z-index: 1;
+  padding-top: 13rem;
 }
 
-.footer__logo img {
+.row-one .footer__logo img {
   width: 70%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.row-one .footer__nav__list {
+  text-align: center;
+}
+
+.row-one .footer__nav__list li {
+  margin-bottom: 2rem;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 2px;
+}
+
+.row-one .footer__nav__list a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.connect__one {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.connect__one .company__name {
+  font-size: 16px;
+  line-height: 26px;
+  color: #f0f2f4;
+  font-weight: bold;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.connect__one .company__address {
+  font-size: 16px;
+  line-height: 26px;
+  color: #f0f2f4;
+  font-weight: 400;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.connect__two {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.connect__two .contact__office {
+  font-size: 16px;
+  line-height: 26px;
+  color: #f0f2f4;
+  font-weight: bold;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.connect__two .phone__number, .connect__two .email__address {
+  font-size: 16px;
+  line-height: 26px;
+  color: #f0f2f4;
+  font-weight: 400;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.connect__social {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.connect__social .social-media {
+  margin-right: 1rem;
 }
 
 .landing {
