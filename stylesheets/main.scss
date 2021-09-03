@@ -12,7 +12,7 @@
 
 .header {
     margin: 2rem 0;
-    padding: 0 2rem;
+    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
 
@@ -70,6 +70,18 @@
     font-weight: 500;   
 }
 
+.services__web {
+    background: url(../assets/home/mobile/image-web-design.jpg) no-repeat center;
+}
+
+.services__app {
+    background: url(../assets/home/mobile/image-app-design.jpg) no-repeat center;
+}
+
+.services__graphic {
+    background: url(../assets/home/mobile/image-graphic-design.jpg) no-repeat center;
+}
+
 .services__app, .services__web, .services__graphic {
     border-radius: 10px;
     text-align: center;
@@ -85,7 +97,15 @@
 
 .services {
     margin: 3rem 0 3rem 0;
-    padding: 0rem 2rem;
+    padding: 0rem 1rem;
+
+    // .overlay {
+    //     position: relative;
+    //     top: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-color: #03a;
+    // }
 
     .services-title {
         color: $white;
@@ -106,23 +126,11 @@
             margin-left: 1rem;
         }
     }
-
-    .services__web {
-        background: url(../assets/home/mobile/image-web-design.jpg) no-repeat center;
-    }
-
-    .services__app {
-        background: url(../assets/home/mobile/image-app-design.jpg) no-repeat center;
-    }
-
-    .services__graphic {
-        background: url(../assets/home/mobile/image-graphic-design.jpg) no-repeat center;
-    }
 }
 
 .details {
     margin: 3rem 0 3rem 0;
-    padding: 0rem 2rem;
+    padding: 0rem 1rem;
 
     .detail {
         display: flex;
@@ -149,9 +157,9 @@
 }
 
 .contact-link {
-    margin: 3rem 2rem 0 2rem;
+    margin: 3rem 1rem 0 1rem;
     margin-bottom: -10rem;
-    padding: 3rem 2rem;
+    padding: 3rem 1rem;
     text-align: center;
     color: $white;
     border-radius: 10px;
@@ -263,21 +271,18 @@
     }
 }
 
-
-
-
 // Web design
 .landing {
     background: $peach url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) no-repeat top right;
     color: $white;
     text-align: center;
-    padding: 5rem 2rem 4rem 2rem;
+    padding: 5rem 1rem 4rem 1rem;
 }
 
 .portfolio {
     display: grid;
     margin: 3rem 0 3rem 0;
-    padding: 0rem 2rem;
+    padding: 0rem 1rem;
 }
 
 .portfolio__card {
@@ -312,5 +317,131 @@
             font-size: 16px;
             line-height: 26px;
         }
+    }
+}
+
+// About page
+
+.landing__about {
+    display: flex;
+    flex-direction: column-reverse;
+    background: $peach url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) no-repeat top right;
+    color: $white;
+    text-align: center;
+
+    .landing__photo img {
+        display: block;
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .about__desc {
+        padding: 0 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .about__title {
+        line-height: 36px;
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+    
+    .about__content {
+        font-weight: 400;
+        line-height: 25px;
+        font-size: 15px;
+        margin-bottom: 2rem;
+    }
+}
+
+.talent__photo img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: bottom;
+    display: block;
+}
+
+
+.talent__desc {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: hsl(14, 76%, 97%) url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) no-repeat top right;
+
+    .talent__heading {
+        font-weight: 500;
+        line-height: 36px;
+        font-size: 32px;
+        color: $peach;
+        margin-bottom: 2rem;
+    }
+
+    .talent-content {
+        margin-bottom: 2rem;
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 400;
+        color: $darkGrey;
+    }
+}
+
+.about__location {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.location__title {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 5px;
+}
+
+.location .btn {
+    background-color: $peach;
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+}
+
+.location--link {
+    text-decoration: none;
+    color: $white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.deal {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .deal__photo img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+.deal__desc {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: hsl(14, 76%, 97%) url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) no-repeat top right;
+
+    .deal__title {
+        font-weight: 500;
+        line-height: 36px;
+        font-size: 32px;
+        color: $peach;
+        margin-bottom: 2rem;
+    }
+
+    .deal__content {
+        margin-bottom: 2rem;
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 400;
+        color: $darkGrey;
     }
 }
