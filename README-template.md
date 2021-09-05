@@ -108,6 +108,8 @@ https://www.youtube.com/watch?v=k4taTzkhzHc - I watched this video to understand
 
 https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit
 
+https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder
+
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
