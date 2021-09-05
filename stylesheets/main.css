@@ -441,6 +441,7 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  margin-bottom: 5rem;
 }
 
 .deal .deal__photo img {
@@ -472,5 +473,74 @@
   line-height: 25px;
   font-weight: 400;
   color: #323036;
+}
+
+.locations .canada {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.locations .canada .canada__location {
+  height: 320px;
+  background: url(../assets/locations/tablet/image-map-canada.png);
+}
+
+.locations .australia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.locations .australia .australia__location {
+  height: 320px;
+  background: url(../assets/locations/tablet/image-map-australia.png);
+}
+
+.locations .united__kingdom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.locations .united__kingdom .united__kingdom__location {
+  height: 320px;
+  background: url(../assets/locations/tablet/image-map-uk.png);
+}
+
+.country__desc {
+  text-align: center;
+  padding: 3rem 0;
+  margin-bottom: 4rem;
+  background: #fdf4f2 url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) repeat top center;
+}
+
+.country__desc .country__office__details {
+  margin-bottom: 2rem;
+}
+
+.country__desc .country__title {
+  font-size: 32px;
+  line-height: 36px;
+  color: #e88069;
+  margin-bottom: 2rem;
+}
+
+.country__desc .country__office {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
 }
 /*# sourceMappingURL=main.css.map */
