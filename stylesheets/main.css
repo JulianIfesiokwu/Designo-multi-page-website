@@ -42,10 +42,12 @@
 }
 
 .landing__complex {
-  background: #e88069 url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) no-repeat top right;
+  background: #e88069 url(../assets/shared/desktop/bg-pattern-small-circle.svg) no-repeat left/182%;
   color: white;
   text-align: center;
-  padding: 5rem 2rem 0rem 2rem;
+  padding: 4rem 2rem 0rem 2rem;
+  height: 172vh;
+  overflow: hidden;
 }
 
 .landing__title {
@@ -62,9 +64,17 @@
   margin-bottom: 2rem;
 }
 
-.landing__photo img {
-  width: 100%;
-  display: block;
+.landing__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -5rem;
 }
 
 .btn {
@@ -80,25 +90,9 @@
   font-weight: 500;
 }
 
-.services__web {
-  background: url(../assets/home/mobile/image-web-design.jpg) no-repeat center;
-}
-
-.services__app {
-  background: url(../assets/home/mobile/image-app-design.jpg) no-repeat center;
-}
-
-.services__graphic {
-  background: url(../assets/home/mobile/image-graphic-design.jpg) no-repeat center;
-}
-
-.services__app, .services__web, .services__graphic {
-  border-radius: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
-  height: 250px;
-  margin-bottom: 1rem;
+.services {
+  margin: 4rem 0 4rem 0;
+  padding: 0 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,11 +106,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.services {
-  margin: 3rem 0 3rem 0;
-  padding: 0rem 1rem;
 }
 
 .services .services-title {
@@ -139,9 +128,59 @@
   margin-left: 1rem;
 }
 
+.services__web {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(../assets/home/mobile/image-web-design.jpg) no-repeat center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/home/mobile/image-web-design.jpg) no-repeat center/cover;
+}
+
+.services__app {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(../assets/home/mobile/image-app-design.jpg) no-repeat center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/home/mobile/image-app-design.jpg) no-repeat center/cover;
+}
+
+.services__graphic {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(../assets/home/mobile/image-graphic-design.jpg) no-repeat center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/home/mobile/image-graphic-design.jpg) no-repeat center/cover;
+}
+
+.services__app, .services__web, .services__graphic {
+  border-radius: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  min-width: 100%;
+  height: 250px;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .details {
   margin: 3rem 0 3rem 0;
   padding: 0rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .details .detail {
@@ -158,6 +197,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: url(../assets/shared/desktop/bg-pattern-small-circle.svg) no-repeat top/60%;
+  margin-bottom: 3rem;
 }
 
 .detail__title {
@@ -183,7 +224,7 @@
   text-align: center;
   color: white;
   border-radius: 10px;
-  background: #e88069 url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) no-repeat top;
+  background: #e88069 url(../assets/shared/desktop/bg-pattern-three-circles.svg) no-repeat left/150%;
 }
 
 .contact-link .contact--link__title {

@@ -110,6 +110,18 @@ https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder
 
+https://css-tricks.com/using-svg/
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
+
+https://www.freecodecamp.org/news/how-to-center-an-image-in-css/
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/background
+
+https://www.w3schools.com/css/css_image_transparency.asp
+
+https://stackoverflow.com/questions/31632419/how-to-darken-a-css-background-image/31632494
+
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
