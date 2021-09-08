@@ -7,7 +7,7 @@
 // To create overlap of footer
 .main {
     position: relative;
-    z-index: 3;
+    z-index: 2;
 }
 
 .header {
@@ -15,6 +15,7 @@
     padding: 0 1rem;
     display: flex;
     justify-content: space-between;
+    z-index: 3;
 
     .header__logo img{
         width: 80%;
@@ -33,7 +34,7 @@
     color: $white;
     text-align: center;
     padding: 4rem 2rem 0rem 2rem;
-    height: 172vh;
+    height: 177vh;
     overflow: hidden;
 }
 
@@ -166,7 +167,7 @@
     padding: 3rem 1rem;
     text-align: center;
     color: $white;
-    border-radius: 10px;
+    border-radius: 15px;
     background: $peach url(../assets/shared/desktop/bg-pattern-three-circles.svg) no-repeat left/150%;
 
     .contact--link__title {
@@ -187,15 +188,24 @@
 .footer {
     background: hsl(270, 3%, 11%);
     position: relative;
-    z-index: 1;
     padding-top: 13rem;      
 }
+
+
 
 .row-one {
     .footer__logo img {
         width: 70%;
         margin: 0 auto;
         display: block;
+        margin-bottom: 2rem;
+    }
+
+    .light-line {
+        height: 1px;
+        width: 90%;
+        margin: 0 auto;
+        background-color: hsl(0, 0%, 59%);
         margin-bottom: 2rem;
     }
 
@@ -216,8 +226,12 @@
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 400;
-    }
-    
+    }    
+}
+
+// remove the top padding from contact footer
+.contact-footer {
+    padding-top: 5rem;
 }
 
 .connect__one {
@@ -291,18 +305,18 @@
 
 .portfolio__card {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
     margin-bottom: 2rem;
 
     .card__banner img{
         width: 100%;
-        border-radius: 10px 10px 0 0;
+        border-radius: 15px 15px 0 0;
         display: block;
     }
 
     .card__info {
         background-color: hsl(14, 76%, 97%);
-        border-radius: 0 0 10px 10px;
+        border-radius: 0 0 15px 15px;
         text-align: center;
         padding: 2rem 2rem;
 
@@ -329,7 +343,7 @@
 .landing__about {
     display: flex;
     flex-direction: column-reverse;
-    background: $peach url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) no-repeat top right;
+    background: $peach url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) no-repeat right/180%;
     color: $white;
     text-align: center;
 
@@ -340,7 +354,7 @@
     }
 
     .about__desc {
-        padding: 0 1rem;
+        padding: 4rem 1rem 0 1rem;
         margin-bottom: 4rem;
     }
 
@@ -357,6 +371,17 @@
         font-size: 15px;
         margin-bottom: 2rem;
     }
+
+    .about__photo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
 }
 
 .talent__photo img {
@@ -371,7 +396,7 @@
 .talent__desc {
     text-align: center;
     padding: 4rem 1rem;
-    background: hsl(14, 76%, 97%) url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) no-repeat top right;
+    background: hsl(14, 76%, 97%) url(../assets/shared/desktop/bg-pattern-three-circles.svg) no-repeat left/150%;
 
     .talent__heading {
         font-weight: 500;
@@ -391,8 +416,22 @@
 }
 
 .about__location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-bottom: 5rem;
+    padding: 3rem 1rem;
+}
+
+.location {
+    margin-bottom: 3rem;
+
+    .location__img {
+        background: url(../assets/shared/desktop/bg-pattern-small-circle.svg) no-repeat top/100%;
+        margin-bottom: 1rem;
+        padding-bottom: 2rem;
+    }
 }
 
 .location__title {
@@ -423,6 +462,7 @@
 
     .deal__photo img {
         width: 100%;
+        height: 95vh;
         display: block;
         object-fit: cover;
         object-position: top;
@@ -432,7 +472,7 @@
 .deal__desc {
     text-align: center;
     padding: 4rem 1rem;
-    background: hsl(14, 76%, 97%) url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) no-repeat top right;
+    background: hsl(14, 76%, 97%) url(../assets/shared/desktop/bg-pattern-three-circles.svg) no-repeat left/150%;
 
     .deal__title {
         font-weight: 500;
@@ -511,7 +551,7 @@
 // Contact Page
 
 .landing__contact {
-    background: $peach;
+    background: $peach url(../assets/shared/desktop/bg-pattern-two-circles.svg) no-repeat top/150%;
     color: $white;
     text-align: center;
     padding: 3rem 1rem;

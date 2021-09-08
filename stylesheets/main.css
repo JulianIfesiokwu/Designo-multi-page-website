@@ -17,7 +17,7 @@
 
 .main {
   position: relative;
-  z-index: 3;
+  z-index: 2;
 }
 
 .header {
@@ -29,6 +29,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 3;
 }
 
 .header .header__logo img {
@@ -46,7 +47,7 @@
   color: white;
   text-align: center;
   padding: 4rem 2rem 0rem 2rem;
-  height: 172vh;
+  height: 177vh;
   overflow: hidden;
 }
 
@@ -223,7 +224,7 @@
   padding: 3rem 1rem;
   text-align: center;
   color: white;
-  border-radius: 10px;
+  border-radius: 15px;
   background: #e88069 url(../assets/shared/desktop/bg-pattern-three-circles.svg) no-repeat left/150%;
 }
 
@@ -244,7 +245,6 @@
 .footer {
   background: #1c1b1d;
   position: relative;
-  z-index: 1;
   padding-top: 13rem;
 }
 
@@ -252,6 +252,14 @@
   width: 70%;
   margin: 0 auto;
   display: block;
+  margin-bottom: 2rem;
+}
+
+.row-one .light-line {
+  height: 1px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #969696;
   margin-bottom: 2rem;
 }
 
@@ -272,6 +280,10 @@
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 400;
+}
+
+.contact-footer {
+  padding-top: 5rem;
 }
 
 .connect__one {
@@ -345,19 +357,19 @@
 
 .portfolio__card {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-bottom: 2rem;
 }
 
 .portfolio__card .card__banner img {
   width: 100%;
-  border-radius: 10px 10px 0 0;
+  border-radius: 15px 15px 0 0;
   display: block;
 }
 
 .portfolio__card .card__info {
   background-color: #fdf4f2;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 15px 15px;
   text-align: center;
   padding: 2rem 2rem;
 }
@@ -386,7 +398,7 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  background: #e88069 url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) no-repeat top right;
+  background: #e88069 url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) no-repeat right/180%;
   color: white;
   text-align: center;
 }
@@ -398,7 +410,7 @@
 }
 
 .landing__about .about__desc {
-  padding: 0 1rem;
+  padding: 4rem 1rem 0 1rem;
   margin-bottom: 4rem;
 }
 
@@ -416,6 +428,26 @@
   margin-bottom: 2rem;
 }
 
+.landing__about .about__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing__about .about__photo img {
+  width: 100%;
+}
+
 .talent__photo img {
   width: 100%;
   height: 320px;
@@ -429,7 +461,7 @@
 .talent__desc {
   text-align: center;
   padding: 4rem 1rem;
-  background: #fdf4f2 url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) no-repeat top right;
+  background: #fdf4f2 url(../assets/shared/desktop/bg-pattern-three-circles.svg) no-repeat left/150%;
 }
 
 .talent__desc .talent__heading {
@@ -449,8 +481,31 @@
 }
 
 .about__location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  margin-bottom: 5rem;
+  padding: 3rem 1rem;
+}
+
+.location {
+  margin-bottom: 3rem;
+}
+
+.location .location__img {
+  background: url(../assets/shared/desktop/bg-pattern-small-circle.svg) no-repeat top/100%;
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .location__title {
@@ -487,6 +542,7 @@
 
 .deal .deal__photo img {
   width: 100%;
+  height: 95vh;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
@@ -497,7 +553,7 @@
 .deal__desc {
   text-align: center;
   padding: 4rem 1rem;
-  background: #fdf4f2 url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) no-repeat top right;
+  background: #fdf4f2 url(../assets/shared/desktop/bg-pattern-three-circles.svg) no-repeat left/150%;
 }
 
 .deal__desc .deal__title {
@@ -586,7 +642,7 @@
 }
 
 .landing__contact {
-  background: #e88069;
+  background: #e88069 url(../assets/shared/desktop/bg-pattern-two-circles.svg) no-repeat top/150%;
   color: white;
   text-align: center;
   padding: 3rem 1rem;
