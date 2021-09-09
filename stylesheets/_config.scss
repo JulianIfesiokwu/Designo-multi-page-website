@@ -21,3 +21,15 @@ $LightGrey: hsl(210°, 17%, 95%);
     font-family: 'Jost', sans-serif;
     font-size: 15px;
 }
+
+@mixin media-md {
+    @media screen and (min-width: 641px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
