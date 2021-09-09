@@ -1,5 +1,6 @@
 @import './config';
 @import './responsive';
+@import './web-design';
 
 .container {
     width: 100%;
@@ -195,15 +196,33 @@
     padding-top: 13rem;      
 }
 
+.footer__logo img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 2rem;
+}
 
+.footer__nav__list {
+    text-align: center;
+}
+
+.footer__nav__list li{
+    margin-bottom: 2rem;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+}
+
+.footer__nav__list a{
+    text-align: center;
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+}  
 
 .row-one {
-    .footer__logo img {
-        width: 70%;
-        margin: 0 auto;
-        display: block;
-        margin-bottom: 2rem;
-    }
 
     .mobile-line {
         height: 1px;
@@ -220,25 +239,7 @@
         background-color: hsl(0, 0%, 59%);
         margin-bottom: 2rem;
     }
-
-    .footer__nav__list {
-        text-align: center;
-    }
-
-    .footer__nav__list li{
-        margin-bottom: 2rem;
-        font-size: 14px;
-        line-height: 14px;
-        letter-spacing: 2px;
-    }
-
-    .footer__nav__list a{
-        text-align: center;
-        color: $white;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 400;
-    }    
+  
 }
 
 // remove the top padding from contact footer
@@ -298,55 +299,6 @@
 
     .social-media {
         margin-right: 1rem;
-    }
-}
-
-// Web design
-.landing {
-    background: $peach url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) no-repeat top right;
-    color: $white;
-    text-align: center;
-    padding: 5rem 1rem 4rem 1rem;
-}
-
-.portfolio {
-    display: grid;
-    margin: 3rem 0 3rem 0;
-    padding: 0rem 1rem;
-}
-
-.portfolio__card {
-    width: 100%;
-    border-radius: 15px;
-    margin-bottom: 2rem;
-
-    .card__banner img{
-        width: 100%;
-        border-radius: 15px 15px 0 0;
-        display: block;
-    }
-
-    .card__info {
-        background-color: hsl(14, 76%, 97%);
-        border-radius: 0 0 15px 15px;
-        text-align: center;
-        padding: 2rem 2rem;
-
-        .card__title {
-            color: hsl(11, 72%, 66%);
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 26px;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
-
-        .card__desc {
-            color: $darkGrey;
-            font-size: 16px;
-            line-height: 26px;
-        }
     }
 }
 
