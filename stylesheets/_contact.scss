@@ -1,0 +1,47 @@
+// Contact Page
+
+.landing__contact {
+    background: $peach url(../assets/shared/desktop/bg-pattern-two-circles.svg) no-repeat top/150%;
+    color: $white;
+    text-align: center;
+    padding: 3rem 1rem;
+
+    .contact__title {
+        line-height: 36px;
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+
+    .contact-content {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+
+    #name,#email,#phone,#message {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid $white;
+        color: $white;
+    }
+
+    button {
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+}
+
+::placeholder {
+    color: $white;
+}

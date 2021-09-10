@@ -132,7 +132,7 @@
 
     }
 
-    // Web design 
+    // Web design, app design and graphic design
     .landing {
         margin: 0 auto;
         width: 95%;
@@ -149,6 +149,188 @@
             margin: 0 auto;
             font-size: 16px;
             line-height: 26px;
+            margin-bottom: 2rem;
+        }
+    }
+
+    // about page
+    .landing__about {
+        margin: 0 auto;
+        width: 95%;
+        border-radius: 15px;
+        background: $peach url(../assets/shared/desktop/bg-pattern-small-circle.svg) no-repeat left/60%;
+        margin-bottom: 3rem;
+
+        .about__title {
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        .about__content {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        .about__photo img{
+            border-radius: 15px 15px 0 0;
+        }
+    }
+
+    .talent {
+        margin: 0 auto;
+        width: 95%;
+        border-radius: 15px;
+        background: $peach url(../assets/shared/desktop/bg-pattern-small-circle.svg) no-repeat left/60%;
+        margin-bottom: 3rem;
+
+        .talent__photo img{
+            border-radius: 15px 15px 0 0;
+        }
+
+        .talent__desc {
+            border-radius: 0 0 15px 15px;
+
+            .talent__heading {
+                font-size: 40px;
+                line-height: 48px;
+            }
+
+            .talent-content {
+                width: 90%;
+                margin: 0 auto 2rem auto;
+            }
+        }
+    }
+
+    .deal {
+        margin: 0 auto;
+        width: 95%;
+        border-radius: 15px;
+        background: $peach url(../assets/shared/desktop/bg-pattern-small-circle.svg) no-repeat left/60%;
+        margin-bottom: 3rem;
+
+        .deal__desc {
+            border-radius: 0 0 15px 15px;
+
+            .deal__title {
+                font-size: 40px;
+                line-height: 48px;
+            }
+
+            .deal__content {
+                width: 95%;
+                margin: 0 auto 2rem auto;
+            }
+        }
+
+        .deal__photo img{
+            border-radius: 15px 15px 0 0;
+        }
+
+    }
+    
+    // Locations Page
+    .canada {
+        margin: 0 auto;
+        width: 95%;
+        margin-bottom: 1rem;
+
+        .country__desc {
+            border-radius: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            text-align: initial;
+
+            .country__office__details {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+
+            .canada__contact {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+        }
+
+        .canada__location img,  .united__kingdom img{
+            border-radius: 15px;
+            width: 100%;
+            display: block;
+            margin-bottom: 2rem;
+        }
+
+    }
+
+    .australia {
+        margin: 0 auto;
+        width: 95%;
+        margin-bottom: 1rem;
+
+        .country__desc {
+            border-radius: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            text-align: initial;
+
+            .country__office__details {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+
+            .australia__contact {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+        }
+        
+        .australia__location img {
+            border-radius: 15px;
+            width: 100%;
+            display: block;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .united__kingdom {
+        margin: 0 auto;
+        width: 95%;
+        margin-bottom: 1rem;
+
+        .country__desc {
+            border-radius: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            text-align: initial;
+
+            .country__office__details {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+
+            .united__kingdom__contact {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+        }
+
+        .united__kingdom__location img {
+            border-radius: 15px;
+            width: 100%;
+            display: block;
             margin-bottom: 2rem;
         }
     }

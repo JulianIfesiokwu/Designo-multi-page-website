@@ -1,0 +1,41 @@
+// Locations Page
+
+.locations {
+    .canada {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .australia {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .united__kingdom {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.country__desc {
+    text-align: center;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+    background: hsl(14, 76%, 97%) url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) repeat top center;
+
+    .country__office__details {
+        margin-bottom: 2rem;
+    }
+
+    .country__title {
+        font-size: 32px;
+        line-height: 36px;
+        color: $peach;
+        margin-bottom: 2rem;
+    }
+    .country__office {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 25px;
+    }
+}

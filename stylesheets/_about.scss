@@ -1,0 +1,151 @@
+// About page
+
+.landing__about {
+    display: flex;
+    flex-direction: column-reverse;
+    background: $peach url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) no-repeat right/180%;
+    color: $white;
+    text-align: center;
+}
+
+.landing__photo img {
+    display: block;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.about__desc {
+    padding: 4rem 1rem 0 1rem;
+    margin-bottom: 4rem;
+}
+
+.about__title {
+    line-height: 36px;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.about__content {
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 15px;
+    margin-bottom: 2rem;
+}
+
+.about__photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+    }
+}
+
+.talent__photo img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: bottom;
+    display: block;
+}
+
+.talent__desc {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: hsl(14, 76%, 97%) url(../assets/shared/desktop/bg-pattern-three-circles.svg) no-repeat left/150%;
+
+    .talent__heading {
+        font-weight: 500;
+        line-height: 36px;
+        font-size: 32px;
+        color: $peach;
+        margin-bottom: 2rem;
+    }
+
+    .talent-content {
+        margin-bottom: 2rem;
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 400;
+        color: $darkGrey;
+    }
+}
+
+.about__location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.location {
+    margin-bottom: 3rem;
+
+    .location__img {
+        background: url(../assets/shared/desktop/bg-pattern-small-circle.svg) no-repeat top/100%;
+        margin-bottom: 1rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.location__title {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 5px;
+}
+
+.location .btn {
+    background-color: $peach;
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+}
+
+.location--link {
+    text-decoration: none;
+    color: $white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.deal {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 5rem;
+
+    .deal__photo img {
+        width: 100%;
+        height: 95vh;
+        display: block;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+.deal__desc {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: hsl(14, 76%, 97%) url(../assets/shared/desktop/bg-pattern-three-circles.svg) no-repeat left/150%;
+
+    .deal__title {
+        font-weight: 500;
+        line-height: 36px;
+        font-size: 32px;
+        color: $peach;
+        margin-bottom: 2rem;
+    }
+
+    .deal__content {
+        margin-bottom: 2rem;
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 400;
+        color: $darkGrey;
+    }
+}
