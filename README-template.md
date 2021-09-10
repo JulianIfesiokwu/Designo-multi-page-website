@@ -130,6 +130,8 @@ https://www.w3schools.com/tags/tag_picture.asp
 
 https://www.w3schools.com/howto/howto_css_image_text.asp
 
+https://www.w3schools.com/css/css_grid_container.asp
+
 
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
