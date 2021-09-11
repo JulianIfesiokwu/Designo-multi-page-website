@@ -130,6 +130,12 @@ https://www.w3schools.com/tags/tag_picture.asp
 
 https://www.w3schools.com/howto/howto_css_image_text.asp
 
+https://www.tutorialrepublic.com/faq/how-to-position-text-over-an-image-using-css.php
+
+https://dev.to/nazanin_ashrafi/how-to-darken-an-image-with-css-4f5h
+
+https://dev.to/ellen_dev/two-ways-to-achieve-an-image-colour-overlay-with-css-eio
+
 https://www.w3schools.com/css/css_grid_container.asp
 
 

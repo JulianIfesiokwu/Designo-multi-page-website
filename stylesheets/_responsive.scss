@@ -33,52 +33,71 @@
         letter-spacing: 2px;
     }
 
-    .landing__complex {
-        margin: 0 auto;
-        width: 95%;
-        border-radius: 15px;
-        background: $peach url(../assets/shared/desktop/bg-pattern-small-circle.svg) no-repeat left/60%;
-
-        .landing__title {
-            font-size: 48px;
-            line-height: 48px;
-        }
-
-        .landing__content {
-            width: 80%;
+    .main {
+        .landing__complex {
             margin: 0 auto;
-            font-size: 16px;
-            line-height: 26px;
-            margin-bottom: 2rem;
+            width: 90%;
+            height: 180vh;
+            border-radius: 15px;
+            background: $peach url(../assets/shared/desktop/bg-pattern-small-circle.svg) no-repeat left/60%;
+    
+            .landing__title {
+                font-size: 48px;
+                line-height: 48px;
+            }
+    
+            .landing__content {
+                width: 80%;
+                margin: 0 auto;
+                font-size: 16px;
+                line-height: 26px;
+                margin-bottom: 2rem;
+            }
+    
         }
-
-        .landing__photo{
-            margin-top: -7rem;
+    
+        .details {
+            padding: 0 2rem;
+    
+            .detail {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 3%;
+    
+                .detail__title {
+                    margin: 1rem 0;
+                    text-align: initial;
+                }
+    
+                .detail-content {
+                    text-align: initial;
+                    padding: 0;
+                }
+            }
+    
         }
-    }
-
-    .details {
-
-        .detail {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 5%;
-
-            .detail__title {
-                margin: 1rem 0;
+    
+        .contact-link {
+            .contact--link__title {
+                width: 50%;
+                margin: 0 auto;
             }
 
-            .detail-content {
-               text-align: initial; 
+            .contact--link__content {
+                width: 70%;
+                margin: 0 auto;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
             }
         }
 
     }
+
 
     .footer {
-        padding: 1rem;
+        padding: 1rem 2rem;
 
         .row-one {
             display: flex;
@@ -347,16 +366,20 @@
 @include media-lg {
     // Home page
     body {
+        width: 95%;
+        margin: 0 auto;
+
         .header {
-            width: 90%;
-            margin: 2rem auto;
+            padding: 0 4rem;
+            margin: 2rem 0;
         }        
 
         .main {
-            width: 90%;
-            margin: 0 auto;
+            width: 100%;
 
             .landing__complex {
+                width: 100%;
+                height: 50vh;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
@@ -382,6 +405,8 @@
             }
 
             .landing__photo img {
+                width: 200%;
+                height: auto;
                 margin-top: 0;
             }
 
