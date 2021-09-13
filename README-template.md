@@ -138,6 +138,10 @@ https://dev.to/ellen_dev/two-ways-to-achieve-an-image-colour-overlay-with-css-ei
 
 https://www.w3schools.com/css/css_grid_container.asp
 
+https://css-tricks.com/change-color-of-svg-on-hover/
+
+https://coder-coder.com/background-image-opacity/
+
 
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }

@@ -29,7 +29,7 @@ $LightGrey: hsl(210°, 17%, 95%);
 }
 
 @mixin media-lg {
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1000px) {
         @content;
     }
 }

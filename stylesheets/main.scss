@@ -34,6 +34,11 @@
     vertical-align: bottom;
 }
 
+.nav--item:hover, .footer__nav--item:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .landing__complex {
     background: $peach url(../assets/shared/desktop/bg-pattern-small-circle.svg) no-repeat left/170%;
     color: $white;
@@ -70,6 +75,17 @@
     height: auto;
 }
 
+.landing-btn, .contact-link--btn, .location--btn, .submit-btn{
+    transition: color 400ms, background-color 400ms;
+    cursor: pointer;
+
+}
+
+.landing-btn:hover, .contact-link--btn:hover, .location--btn:hover, .submit-btn:hover {
+   background-color: $lightPeach;
+   color: $white;
+}
+
 .btn {
     padding: 1rem 2rem;
     border-radius: 10px;
@@ -86,7 +102,6 @@
 
 .services {
     margin: 4rem 0;
-    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,11 +159,11 @@
 
 .details {
     margin: 3rem 0 3rem 0;
-    padding: 0rem 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    gap: 2%;
 }
 
 .detail {
@@ -188,7 +203,7 @@
     text-align: center;
     color: $white;
     border-radius: 15px;
-    background: $peach url(../assets/shared/desktop/bg-pattern-three-circles.svg) no-repeat left/150%;
+    background: $peach url(../assets/shared/desktop/bg-pattern-call-to-action.svg) repeat right/80%;
 
     .contact--link__title {
         font-weight: 500;
@@ -315,5 +330,21 @@
 
     .social-media {
         margin-right: 1rem;
+        width: 24px;
+        height: 24px;
     }
+
+    .social-media:hover {
+        a svg path {
+            fill: $lightPeach;
+        }
+
+    }
+    .social-media a svg{
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        transition: fill 400ms;
+    }
+
 }

@@ -46,3 +46,18 @@
         }
     }
 }
+
+.portfolio__card:hover {
+    cursor: pointer;
+    .card__info {
+        background-color: $peach;
+
+        .card__title {
+            color: $white;
+        }
+
+        .card__desc {
+            color: $white;
+        }
+    }
+}
