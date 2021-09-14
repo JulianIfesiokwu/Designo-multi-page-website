@@ -408,16 +408,10 @@
             .services {
                 display: flex;
                 flex-direction: row;
-                gap: 2%;
+                gap: 3%;
 
                 .services__web {
-                    width: 100%;
 
-                    .service__image__web {
-                        height: 50vh;
-                        border-radius: 15px;
-                        flex: 1;
-                    }
                 }
                 .services__app {
 
@@ -611,8 +605,9 @@
                 align-items: center;
                 padding: 2rem 4rem;
 
-                .landing__desc {
-                    width: 50%;
+                .landing__desc__contact {
+                    flex-basis: 1 1 auto;
+                    // flex: 50%;
                     .contact__title {
                         font-size: 48px;
                         line-height: 48px;
@@ -629,7 +624,8 @@
                 }
 
                 .contact__form {
-                    width: 100%;
+                    flex-basis: 2 1 auto;
+                    // flex: 50%;
                 }
 
             }

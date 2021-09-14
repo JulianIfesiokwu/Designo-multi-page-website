@@ -142,6 +142,14 @@ https://css-tricks.com/change-color-of-svg-on-hover/
 
 https://coder-coder.com/background-image-opacity/
 
+https://www.w3resource.com/javascript/form/email-validation.php
+
+https://www.w3resource.com/javascript/form/phone-no-validation.php
+
+https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax
+
 
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
