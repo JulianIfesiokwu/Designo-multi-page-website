@@ -1,16 +1,14 @@
-// About page
-
 .landing__about {
     display: flex;
     flex-direction: column-reverse;
-    background: $peach url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) no-repeat right/180%;
+    align-items: space-between;
+    background-color: $peach;
     color: $white;
     text-align: center;
 }
 
 .landing__photo img {
     display: block;
-    width: 100%;
     margin-bottom: 4rem;
 }
 
@@ -33,26 +31,16 @@
     margin-bottom: 2rem;
 }
 
-.about__photo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    img {
-        width: 100%;
-    }
+.about__photo img{
+    width: 100%;
 }
 
 .talent__photo img {
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-    object-position: bottom;
     display: block;
 }
 
 .talent__desc {
+    width: 70%;
     text-align: center;
     padding: 4rem 1rem;
     background: hsl(14, 76%, 97%) url(../assets/shared/desktop/bg-pattern-three-circles.svg) no-repeat left/150%;

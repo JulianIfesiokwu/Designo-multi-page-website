@@ -1,4 +1,3 @@
-// Web design
 .landing {
     background: $peach url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) no-repeat top right;
     color: $white;
@@ -9,7 +8,7 @@
 .portfolio {
     display: grid;
     margin: 3rem 0 3rem 0;
-    padding: 0rem 1rem;
+    padding: 0rem 1.5rem;
 }
 
 .portfolio__card {

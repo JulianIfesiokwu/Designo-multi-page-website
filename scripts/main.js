@@ -2,6 +2,7 @@ const nameField = document.querySelector('#name');
 const emailField = document.querySelector('#email');
 const phoneField = document.querySelector('#phone');
 const submitBtn = document.querySelector('.submit-btn');
+const hamburgerMenu = document.querySelector('.hamburger-menu');
 
 function validateForm(e) {
     // prevent default action
@@ -55,5 +56,12 @@ function showError(field) {
     field.nextElementSibling.style.display='inline-block';
 }
 
+// function toggleMenu() {
+//     if() 
+// }
 
-submitBtn.addEventListener('click', validateForm)
+
+// hamburgerMenu.addEventListener('click', toggleMenu)
+if(submitBtn) {
+    submitBtn.addEventListener('click', validateForm)
+}

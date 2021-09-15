@@ -39,12 +39,16 @@
     text-decoration: underline;
 }
 
+.close-menu {
+    display: none;
+}
+
 .landing__complex {
     background: $peach url(../assets/shared/desktop/bg-pattern-small-circle.svg) no-repeat left/170%;
     color: $white;
     text-align: center;
     padding: 4rem 1rem 0rem 1rem;
-    height: 170vh;
+    height: 105vh;
     overflow: hidden;
 }
 
@@ -60,19 +64,18 @@
     line-height: 25px;
     font-size: 15px;
     margin-bottom: 2rem;
-    padding: 0 1rem;
 }
 
 .landing__photo {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .landing__photo img{
     margin-top: -8rem;
-    width: 200%;
-    height: auto;
+    width: 150%;
 }
 
 .landing-btn, .contact-link--btn, .location--btn, .submit-btn{
@@ -157,7 +160,9 @@
 }
 
 .details {
+    width: 100%;
     margin: 3rem 0 3rem 0;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -196,13 +201,13 @@
 }
 
 .contact-link {
-    margin: 0 2rem 0 2rem;
+    margin: 0 1.5rem;
     margin-bottom: -10rem;
     padding: 3rem 1rem;
     text-align: center;
     color: $white;
     border-radius: 15px;
-    background: $peach url(../assets/shared/desktop/bg-pattern-call-to-action.svg) repeat right/80%;
+    background: $peach url(../assets/shared/desktop/bg-pattern-call-to-action.svg) repeat right/200%;
 
     .contact--link__title {
         font-weight: 500;
@@ -221,6 +226,7 @@
 }
 
 .footer {
+    width: 100%;
     background: hsl(270, 3%, 11%);
     position: relative;
     padding-top: 13rem;      
@@ -230,6 +236,13 @@
     width: 70%;
     margin: 0 auto;
     display: block;
+    margin-bottom: 2rem;
+}
+
+.light-line {
+    height: 1px;
+    background-color: white;
+    margin: 0 2rem;
     margin-bottom: 2rem;
 }
 
