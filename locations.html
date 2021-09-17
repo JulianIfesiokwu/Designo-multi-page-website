@@ -12,7 +12,7 @@
   <div class="container">
     <!-- Header -->
     <header class="header">
-      <span class="header__logo"><img src="./assets/shared/desktop/logo-dark.png" alt="logo"></span>
+      <span class="header__logo"><a href="./index.html"><img src="./assets/shared/desktop/logo-dark.png" alt="logo"></a></span>
       <!-- navigation -->
       <nav class="header__nav">
         <ul class="nav__list">
@@ -20,13 +20,20 @@
           <li class="nav--item"><a href="./locations.html">Locations</a></li>
           <li class="nav--item"><a href="./contact.html">Contact</a></li>
         </ul>
+        <ul class="mobile__list">
+          <li class="nav--item"><a href="./about.html">Our Company</a></li>
+          <li class="nav--item"><a href="./locations.html">Locations</a></li>
+          <li class="nav--item"><a href="./contact.html">Contact</a></li>
+        </ul>
       </nav>
       <!-- Hamburger-menu -->
       <span class="hamburger-menu"><img src="./assets/shared/mobile/icon-hamburger.svg" alt=""></span>
+      <span class="close-menu"><img src="./assets/shared/mobile/icon-close.svg" alt=""></span>
     </header>
 
     <!-- main section -->
     <main class="main">
+      <div class="overlay"></div>
 
       <!-- Map and locations -->
       <section class="locations">
@@ -46,13 +53,21 @@
             </div>
           </div>
           <div class="canada__location" id="canada--map">
-            <source media="(min-width: 1024px)" srcset="./assets/locations/desktop/image-map-canada.png">
-            <img src="./assets/locations/tablet/image-map-canada.png" alt="image-map-canada">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="./assets/locations/desktop/image-map-canada.png">
+              <img src="./assets/locations/tablet/image-map-canada.png" alt="image-map-canada">
+            </picture>
           </div>
         </div>
 
         <!-- Australia -->
         <div class="australia">
+          <div class="australia__location" id="map">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="../assets/locations/desktop/image-map-australia.png">
+              <img src="./assets/locations/tablet/image-map-australia.png" alt="image-map-australia">
+            </picture>
+          </div>
           <div class="country__desc">
             <div class="country__office__details">
               <h3 class="country__title">Australia</h3>
@@ -65,10 +80,6 @@
               <p class="country__contact__phone">P : (02) 6720 9092</p>
               <p class="country__contact__email">M : contact@designo.au</p>
             </div>
-          </div>
-          <div class="australia__location" id="map">
-            <source media="(min-width: 1024px)" srcset="../assets/locations/desktop/image-map-australia.png">
-            <img src="../assets/locations/tablet/image-map-australia.png" alt="image-map-australia">
           </div>
         </div>
 
@@ -88,8 +99,10 @@
             </div>
           </div>
           <div class="united__kingdom__location" id="map">
-            <source media="(min-width: 1024px)" srcset="../assets/locations/desktop/image-map-uk.png">
-            <img src="../assets/locations/tablet/image-map-uk.png" alt="image-map-uk">
+            <picture>
+              <source media="(min-width: 1000px)" srcset="./assets/locations/desktop/image-map-united-kingdom.png">
+              <img src="./assets/locations/tablet/image-map-uk.png" alt="image-map-uk">
+            </picture>
           </div>
         </div>
 
@@ -153,5 +166,6 @@
 
     </footer>
 
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

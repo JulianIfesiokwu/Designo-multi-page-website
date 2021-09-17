@@ -3,6 +3,8 @@ const emailField = document.querySelector('#email');
 const phoneField = document.querySelector('#phone');
 const submitBtn = document.querySelector('.submit-btn');
 const hamburgerMenu = document.querySelector('.hamburger-menu');
+const closeBtn = document.querySelector('.close-menu');
+const navList = document.querySelector('.header__nav');
 
 function validateForm(e) {
     // prevent default action
@@ -56,12 +58,30 @@ function showError(field) {
     field.nextElementSibling.style.display='inline-block';
 }
 
-// function toggleMenu() {
-//     if() 
-// }
+function showMenu() {
+    navList.style.display = 'inline-flex';
+    navList.classList.add('mobile-view');
+    hamburgerMenu.style.display = 'none';
+    closeBtn.style.display = 'block';
+    // add dark overlay
+    // document.querySelector('.overlay').style.display = 'block'
+    document.querySelector('.overlay').style.height = '100%'
+}
+
+function closeMenu() {
+    hamburgerMenu.style.display = 'block';
+    navList.style.display = 'none';
+    navList.classList.remove('mobile-view');
+    closeBtn.style.display = 'none';
+    // remove dark overlay
+    document.querySelector('.overlay').style.height = '0%'
+}
 
 
-// hamburgerMenu.addEventListener('click', toggleMenu)
+hamburgerMenu.addEventListener('click', showMenu)
+if(closeBtn) {
+    closeBtn.addEventListener('click', closeMenu)
+}
 if(submitBtn) {
     submitBtn.addEventListener('click', validateForm)
 }

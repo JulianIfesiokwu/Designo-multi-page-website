@@ -95,9 +95,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
 https://www.w3schools.com/tags/tag_picture.asp
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture
@@ -149,6 +146,10 @@ https://www.w3resource.com/javascript/form/phone-no-validation.php
 https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax
+
+https://www.w3docs.com/snippets/css/how-to-create-an-overlay-using-css.html
+
+https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
 
 
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }

@@ -12,7 +12,7 @@
   <div class="container">
     <!-- Header -->
     <header class="header">
-      <span class="header__logo"><img src="./assets/shared/desktop/logo-dark.png" alt="logo"></span>
+      <span class="header__logo"><a href="./index.html"><img src="./assets/shared/desktop/logo-dark.png" alt="logo"></a></span>
       <!-- navigation -->
       <nav class="header__nav">
         <ul class="nav__list">
@@ -20,13 +20,20 @@
           <li class="nav--item"><a href="./locations.html">Locations</a></li>
           <li class="nav--item"><a href="./contact.html">Contact</a></li>
         </ul>
+        <ul class="mobile__list">
+          <li class="nav--item"><a href="./about.html">Our Company</a></li>
+          <li class="nav--item"><a href="./locations.html">Locations</a></li>
+          <li class="nav--item"><a href="./contact.html">Contact</a></li>
+        </ul>
       </nav>
       <!-- Hamburger-menu -->
       <span class="hamburger-menu"><img src="./assets/shared/mobile/icon-hamburger.svg" alt=""></span>
+      <span class="close-menu"><img src="./assets/shared/mobile/icon-close.svg" alt=""></span>
     </header>
 
     <!-- main section -->
     <main class="main">
+      <div class="overlay"></div>
 
       <!-- Landing -->
       <section class="landing">
@@ -186,6 +193,6 @@
 
   </footer>
 
-
+  <script src="./scripts/main.js"></script>
 </body>
 </html>

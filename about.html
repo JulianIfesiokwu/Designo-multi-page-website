@@ -16,17 +16,24 @@
       <!-- navigation -->
       <nav class="header__nav">
         <ul class="nav__list">
-          <li class="nav--item"><a href="./about.html">Company</a></li>
+          <li class="nav--item first-child"><a href="./about.html">Company</a></li>
+          <li class="nav--item"><a href="./locations.html">Locations</a></li>
+          <li class="nav--item"><a href="./contact.html">Contact</a></li>
+        </ul>
+        <ul class="mobile__list">
+          <li class="nav--item first-child"><a href="./about.html">Our Company</a></li>
           <li class="nav--item"><a href="./locations.html">Locations</a></li>
           <li class="nav--item"><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
       <!-- Hamburger-menu -->
       <span class="hamburger-menu"><img src="./assets/shared/mobile/icon-hamburger.svg" alt=""></span>
+      <span class="close-menu"><img src="./assets/shared/mobile/icon-close.svg" alt=""></span>
     </header>
 
     <!-- main section -->
     <main class="main">
+      <div class="overlay"></div>
 
       <!-- Landing -->
       <section class="landing__about">
@@ -50,6 +57,29 @@
       </div>
 
       </section>
+
+      <!-- Landing test -->
+      <!-- <section class="landing__about-2">
+        <div class="about__desc-2">
+          <h1 class="about__title-2">
+            About us
+          </h1>
+          <p class="about__content-2">
+            Founded in 2010, we are a creative agency that produces lasting results for our clients. 
+            We’ve partnered with many startups, corporations, and nonprofits alike to craft designs 
+            that make real impact. We’re always looking forward to creating brands, products, and 
+            digital experiences that connect with our clients' audiences.
+          </p>
+        </div>
+        <div class="about__photo-2">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="./assets/about/desktop/image-about-hero.jpg">
+            <source media="(min-width: 642px)" srcset="./assets/about/tablet/image-about-hero.jpg">
+            <img src="./assets/about/mobile/image-about-hero.jpg" alt="image-about-hero">
+          </picture>
+      </div>
+
+      </section> -->
 
       <!-- Talent -->
       <section class="talent">
@@ -86,21 +116,21 @@
             <img src="./assets/shared/desktop/illustration-canada.svg" alt="illustration-canada">
           </div>
           <p class="location__title">canada</p>
-          <button class="btn"><a href="" class="location--link">See location</a></button>
+          <button class="btn location--btn"><a href="" class="location--link">See location</a></button>
         </div>
         <div class="location">
           <div class="location__img">
             <img src="./assets/shared/desktop/illustration-australia.svg" alt="illustration-australia">
           </div>
           <p class="location__title">australia</p>
-          <button class="btn"><a href="" class="location--link">See location</a></button>
+          <button class="btn location--btn"><a href="" class="location--link">See location</a></button>
         </div>
         <div class="location">
           <div class="location__img">
             <img src="./assets/shared/desktop/illustration-united-kingdom.svg" alt="illustration-united-kingdom">
           </div>
           <p class="location__title">united kingdom</p>
-          <button class="btn"><a href="" class="location--link">See location</a></button>
+          <button class="btn location--btn"><a href="" class="location--link">See location</a></button>
         </div>
 
       </section>
@@ -189,5 +219,6 @@
 
   </footer>
 
+  <script src="./scripts/main.js"></script>
 </body>
 </html>

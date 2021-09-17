@@ -51,6 +51,8 @@
         outline: none;
         color: $white;
         line-height: 26px;
+        border-bottom: 1px solid $white;
+        margin-bottom: 2rem;
     }
 
     .error-message {
@@ -71,6 +73,15 @@
         letter-spacing: 1px;
         font-weight: 500;
     }
+
+    .submit-btn {
+        float: right;
+    }
+}
+
+// remove-margin-top
+.remove-margin-top {
+    margin-top: -9rem;
 }
 
 ::placeholder {

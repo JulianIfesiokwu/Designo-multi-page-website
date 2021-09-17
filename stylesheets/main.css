@@ -14,7 +14,7 @@
 @media screen and (min-width: 641px) {
   .header {
     width: 95%;
-    margin: 2rem auto;
+    margin: 0 auto;
     padding: 0 2rem;
   }
   .header .header__logo img {
@@ -31,6 +31,9 @@
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
+  .header .mobile__list {
+    display: none;
+  }
   .header .hamburger-menu {
     display: none;
   }
@@ -46,6 +49,7 @@
   }
   .main .landing__complex {
     margin: 0 auto;
+    margin-top: 6rem;
     width: 90%;
     height: 120vh;
     border-radius: 15px;
@@ -232,6 +236,7 @@
     margin-bottom: 3rem;
   }
   .talent .talent__photo img {
+    width: 100%;
     border-radius: 15px 15px 0 0;
   }
   .talent .talent__desc {
@@ -263,6 +268,8 @@
     margin: 0 auto 2rem auto;
   }
   .deal .deal__photo img {
+    width: 100%;
+    height: auto;
     border-radius: 15px 15px 0 0;
   }
   .canada {
@@ -281,9 +288,9 @@
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     text-align: initial;
   }
   .canada .country__desc .country__office__details {
@@ -297,6 +304,7 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    margin-bottom: 0;
   }
   .canada .country__desc .canada__contact {
     display: -webkit-box;
@@ -332,9 +340,9 @@
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     text-align: initial;
   }
   .australia .country__desc .country__office__details {
@@ -348,6 +356,7 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    margin: 0;
   }
   .australia .country__desc .australia__contact {
     display: -webkit-box;
@@ -383,9 +392,9 @@
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     text-align: initial;
   }
   .united__kingdom .country__desc .country__office__details {
@@ -399,6 +408,7 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    margin: 0;
   }
   .united__kingdom .country__desc .united__kingdom__contact {
     display: -webkit-box;
@@ -418,6 +428,17 @@
     display: block;
     margin-bottom: 2rem;
   }
+  .main .landing__contact {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+    text-align: initial;
+    padding: 4rem;
+  }
+  .main .landing__contact .contact-content {
+    width: 95%;
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -426,14 +447,14 @@
     margin: 0 auto;
   }
   body .header {
-    padding: 0 4rem;
-    margin: 2rem 0;
+    padding: 1rem 4rem;
   }
   body .main {
-    width: 95%;
+    width: 90%;
   }
   body .main .landing {
     width: 100%;
+    margin-top: 5rem;
   }
   body .main .landing__complex {
     width: 100%;
@@ -599,6 +620,8 @@
     border-radius: 0 15px 15px 0;
   }
   .main .talent {
+    width: 95%;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -613,13 +636,13 @@
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 5rem;
-    width: 100%;
   }
   .main .talent .talent__photo img {
     display: block;
     border-radius: 15px 0 0 15px;
   }
   .main .talent .talent__desc {
+    width: 70%;
     padding: 4rem;
     text-align: initial;
     border-radius: 0 15px 15px 0;
@@ -643,6 +666,7 @@
             align-items: center;
   }
   .main .deal {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -650,11 +674,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 100%;
-    text-align: initial;
   }
   .main .deal .deal__desc {
     width: 70%;
+    text-align: initial;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -665,20 +688,29 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     border-radius: 15px 0 0 15px;
+    padding: 4rem;
   }
   .main .deal .deal__desc .deal__title {
-    margin-left: 3rem;
-    text-align: initial;
+    text-align: start;
+  }
+  .main .deal .deal__desc .deal__content {
+    width: 100%;
   }
   .main .deal .deal__photo img {
+    max-width: 100%;
+    max-height: 100%;
     display: block;
     border-radius: 0 15px 15px 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .main {
+    width: 90%;
+    margin: 0 auto;
   }
   body .main .locations {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -688,29 +720,35 @@
             flex-direction: column;
   }
   body .main .locations .canada, body .main .locations .australia, body .main .locations .united__kingdom {
+    width: 100%;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
   }
   body .main .locations .canada .country__desc, body .main .locations .united__kingdom .country__desc {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / 3;
-  }
-  body .main .locations .australia .country__desc {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2 / 4;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   body .main .locations .australia .australia__location {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
   }
+  body .main .locations .australia .country__desc {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
+  }
   body .main .landing__contact {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -728,8 +766,7 @@
     padding: 2rem 4rem;
   }
   body .main .landing__contact .landing__desc__contact {
-    -ms-flex-preferred-size: 1 1 auto;
-        flex-basis: 1 1 auto;
+    width: 40%;
   }
   body .main .landing__contact .landing__desc__contact .contact__title {
     font-size: 48px;
@@ -744,8 +781,7 @@
     margin: 0;
   }
   body .main .landing__contact .contact__form {
-    -ms-flex-preferred-size: 2 1 auto;
-        flex-basis: 2 1 auto;
+    width: 70%;
   }
 }
 
@@ -858,12 +894,29 @@
   width: 100%;
 }
 
+.talent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.talent__photo {
+  width: 100%;
+  height: 100%;
+}
+
 .talent__photo img {
+  width: 100%;
+  height: auto;
   display: block;
 }
 
 .talent__desc {
-  width: 70%;
   text-align: center;
   padding: 4rem 1rem;
   background: #fdf4f2 url(../assets/shared/desktop/bg-pattern-three-circles.svg) no-repeat left/150%;
@@ -947,12 +1000,8 @@
 
 .deal .deal__photo img {
   width: 100%;
-  height: 95vh;
+  height: auto;
   display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
 }
 
 .deal__desc {
@@ -977,6 +1026,51 @@
   color: #323036;
 }
 
+.landing__about-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about__desc-2 {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 2rem 4rem;
+}
+
+.about__photo-2 {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.about__photo-2 img {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.about__title-2 {
+  margin-bottom: 2rem;
+}
+
+.about__content-2 {
+  margin-bottom: 2rem;
+}
+
 .locations .canada {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -992,9 +1086,9 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .locations .united__kingdom {
@@ -1007,11 +1101,16 @@
           flex-direction: column-reverse;
 }
 
+.australia__location img, .united__kingdom__location img, .canada__location img {
+  display: block;
+  width: 100%;
+}
+
 .country__desc {
   text-align: center;
   padding: 3rem 0;
   margin-bottom: 2rem;
-  background: #fdf4f2 url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) repeat top center;
+  background: #fdf4f2 url(../assets/shared/desktop/bg-pattern-three-circles.svg) no-repeat top left/170%;
 }
 
 .country__desc .country__office__details {
@@ -1099,6 +1198,8 @@
   outline: none;
   color: white;
   line-height: 26px;
+  border-bottom: 1px solid white;
+  margin-bottom: 2rem;
 }
 
 .contact__form .error-message {
@@ -1118,6 +1219,14 @@
 .contact__form button {
   letter-spacing: 1px;
   font-weight: 500;
+}
+
+.contact__form .submit-btn {
+  float: right;
+}
+
+.remove-margin-top {
+  margin-top: -9rem;
 }
 
 ::-webkit-input-placeholder {
@@ -1158,16 +1267,18 @@ input[type=number] {
 }
 
 .header {
-  margin: 2rem 0;
-  padding: 0 2rem;
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 3;
+  z-index: 12;
   width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
 }
 
 .header__nav {
@@ -1180,6 +1291,37 @@ input[type=number] {
   vertical-align: bottom;
 }
 
+.nav__list {
+  display: none;
+}
+
+.mobile-view {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  background-color: black;
+  color: white;
+  padding: 3rem 2rem;
+  width: 100%;
+  z-index: 9;
+}
+
+.mobile-view .mobile__list {
+  list-style-type: none;
+}
+
+.mobile-view .mobile__list .nav--item {
+  margin-bottom: 0.5rem;
+}
+
+.mobile-view .mobile__list .nav--item a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
 .nav--item:hover, .footer__nav--item:hover {
   cursor: pointer;
   text-decoration: underline;
@@ -1187,6 +1329,22 @@ input[type=number] {
 
 .close-menu {
   display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: height ease-in-out 1000ms;
+  transition: height ease-in-out 1000ms;
+}
+
+.main {
+  margin-top: 5rem;
 }
 
 .landing__complex {

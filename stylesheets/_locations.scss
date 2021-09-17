@@ -6,7 +6,7 @@
 
     .australia {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .united__kingdom {
@@ -15,11 +15,16 @@
     }
 }
 
+.australia__location img, .united__kingdom__location img, .canada__location img {
+    display: block;
+    width: 100%;
+}
+
 .country__desc {
     text-align: center;
     padding: 3rem 0;
     margin-bottom: 2rem;
-    background: hsl(14, 76%, 97%) url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) repeat top center;
+    background: hsl(14, 76%, 97%) url(../assets/shared/desktop/bg-pattern-three-circles.svg) no-repeat top left/170%;
 
     .country__office__details {
         margin-bottom: 2rem;

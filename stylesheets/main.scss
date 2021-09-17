@@ -16,12 +16,15 @@
 }
 
 .header {
-    margin: 2rem 0;
-    padding: 0 2rem;
+
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
-    z-index: 3;
+    z-index: 12;
     width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
 }
 
 .header__nav {
@@ -34,6 +37,37 @@
     vertical-align: bottom;
 }
 
+.nav__list {
+    display: none;
+}
+
+.mobile-view {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    background-color: black;
+    color: $white;
+    padding: 3rem 2rem;
+    width: 100%;
+    z-index: 9;
+
+    .mobile__list {
+        list-style-type: none;
+
+        .nav--item {
+            margin-bottom: 0.5rem;
+        }
+
+        .nav--item a{
+            color: $white;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+    }
+}
+
 .nav--item:hover, .footer__nav--item:hover {
     cursor: pointer;
     text-decoration: underline;
@@ -43,6 +77,21 @@
     display: none;
 }
 
+.overlay {
+    // display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: height ease-in-out 1000ms;
+}
+
+.main {
+    margin-top: 5rem;
+}
 .landing__complex {
     background: $peach url(../assets/shared/desktop/bg-pattern-small-circle.svg) no-repeat left/170%;
     color: $white;
