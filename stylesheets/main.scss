@@ -16,8 +16,7 @@
 }
 
 .header {
-
-    padding: 2rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     z-index: 12;
@@ -43,7 +42,7 @@
 
 .mobile-view {
     position: absolute;
-    top: 6rem;
+    top: 5rem;
     left: 0;
     background-color: black;
     color: $white;
@@ -86,12 +85,13 @@
     width: 100%;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.6);
-    transition: height ease-in-out 1000ms;
+    transition: height ease-in-out 700ms;
 }
 
 .main {
     margin-top: 5rem;
 }
+
 .landing__complex {
     background: $peach url(../assets/shared/desktop/bg-pattern-small-circle.svg) no-repeat left/170%;
     color: $white;
@@ -206,6 +206,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.services__app:hover, .services__web:hover, .services__graphic:hover {
+    cursor: pointer;
+    background: black;
 }
 
 .details {

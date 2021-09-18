@@ -49,7 +49,7 @@
   }
   .main .landing__complex {
     margin: 0 auto;
-    margin-top: 6rem;
+    margin-top: 5rem;
     width: 90%;
     height: 120vh;
     border-radius: 15px;
@@ -187,6 +187,7 @@
   }
   .landing {
     margin: 0 auto;
+    margin-top: 5rem;
     width: 95%;
     border-radius: 15px;
     background: #e88069 url(../assets/shared/desktop/bg-pattern-small-circle.svg) no-repeat left/60%;
@@ -207,6 +208,7 @@
     width: 95%;
     border-radius: 15px;
     margin-bottom: 3rem;
+    margin-top: 6rem;
   }
   .landing__about .about__desc {
     background: #e88069 url(../assets/shared/desktop/bg-pattern-small-circle.svg) no-repeat left/60%;
@@ -271,6 +273,9 @@
     width: 100%;
     height: auto;
     border-radius: 15px 15px 0 0;
+  }
+  .locations {
+    margin-top: 5rem;
   }
   .canada {
     margin: 0 auto;
@@ -434,6 +439,7 @@
     border-radius: 15px;
     text-align: initial;
     padding: 4rem;
+    margin-top: 6rem;
   }
   .main .landing__contact .contact-content {
     width: 95%;
@@ -454,7 +460,6 @@
   }
   body .main .landing {
     width: 100%;
-    margin-top: 5rem;
   }
   body .main .landing__complex {
     width: 100%;
@@ -512,6 +517,12 @@
         -ms-flex-direction: row;
             flex-direction: row;
     gap: 3%;
+  }
+  body .main .services .desktop-view {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body .main .details {
     display: -webkit-box;
@@ -780,8 +791,11 @@
     width: 90%;
     margin: 0;
   }
-  body .main .landing__contact .contact__form {
-    width: 70%;
+  body .main .landing__contact .contact__us {
+    width: 100%;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
   }
 }
 
@@ -902,7 +916,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
 }
 
 .talent__photo {
@@ -1267,7 +1280,7 @@ input[type=number] {
 }
 
 .header {
-  padding: 2rem;
+  padding: 1rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1297,7 +1310,7 @@ input[type=number] {
 
 .mobile-view {
   position: absolute;
-  top: 6rem;
+  top: 5rem;
   left: 0;
   background-color: black;
   color: white;
@@ -1339,8 +1352,8 @@ input[type=number] {
   width: 100%;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.6);
-  -webkit-transition: height ease-in-out 1000ms;
-  transition: height ease-in-out 1000ms;
+  -webkit-transition: height ease-in-out 700ms;
+  transition: height ease-in-out 700ms;
 }
 
 .main {
@@ -1489,6 +1502,11 @@ input[type=number] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.services__app:hover, .services__web:hover, .services__graphic:hover {
+  cursor: pointer;
+  background: black;
 }
 
 .details {

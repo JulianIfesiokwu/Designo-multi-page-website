@@ -42,7 +42,7 @@
     .main {
         .landing__complex {
             margin: 0 auto;
-            margin-top: 6rem;
+            margin-top: 5rem;
             width: 90%;
             height: 120vh;
             border-radius: 15px;
@@ -170,6 +170,7 @@
     // Web design, app design and graphic design
     .landing {
         margin: 0 auto;
+        margin-top: 5rem;
         width: 95%;
         border-radius: 15px;
         background: $peach url(../assets/shared/desktop/bg-pattern-small-circle.svg) no-repeat left/60%;
@@ -194,6 +195,7 @@
         width: 95%;
         border-radius: 15px;
         margin-bottom: 3rem;
+        margin-top: 6rem;
 
         .about__desc {
             background: $peach url(../assets/shared/desktop/bg-pattern-small-circle.svg) no-repeat left/60%;
@@ -275,6 +277,10 @@
     }
     
     // Locations Page
+
+    .locations {
+        margin-top: 5rem;
+    }
     .canada {
         margin: 0 auto;
         width: 95%;
@@ -389,6 +395,7 @@
             border-radius: 15px;
             text-align: initial;
             padding: 4rem;
+            margin-top: 6rem;
 
             .contact-content {
                 width: 95%;
@@ -410,7 +417,6 @@
 
         .header {
             padding: 1rem 4rem;
-
         }        
 
         .main {
@@ -418,7 +424,6 @@
 
             .landing {
                 width: 100%;
-                margin-top: 5rem;
             }
 
             .landing__complex {
@@ -460,6 +465,10 @@
                     display: flex;
                     flex-direction: row;
                     gap: 3%;
+                }
+
+                .desktop-view {
+                    flex-direction: column;
                 }
             }
 
@@ -689,9 +698,9 @@
 
                 }
 
-                .contact__form {
-                    width: 70%;
-                    // flex: 50%;
+                .contact__us {
+                    width: 100%;
+                    flex: 2;
                 }
 
             }
