@@ -42,7 +42,7 @@
 
 .mobile-view {
     position: absolute;
-    top: 5rem;
+    top: 4rem;
     left: 0;
     background-color: black;
     color: $white;
@@ -195,22 +195,34 @@
     filter: brightness(50%);
 }
 
-.services__app, .services__web, .services__graphic {
+.services__app, .services__graphic {
     position: relative;
     border-radius: 15px;
     text-align: center;
     text-transform: uppercase;
-    width: 100%;
+    width: 90%;
     margin-bottom: 2rem ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: black;
+}
+
+.services__web {
+    position: relative;
+    border-radius: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 90%;
+    height: auto;
+    margin-bottom: 2rem ;
+    background: black;
 }
 
 .services__app:hover, .services__web:hover, .services__graphic:hover {
     cursor: pointer;
-    background: black;
+    
 }
 
 .details {

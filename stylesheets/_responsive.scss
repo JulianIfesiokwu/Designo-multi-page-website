@@ -456,16 +456,59 @@
             }
 
             .services {
-                display: flex;
-                flex-direction: row;
-                gap: 3%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                align-items: stretch;
+                justify-items: stretch;
+                grid-gap: 2%;
 
-                .column-two {
-                    width: 100%;
+                .option {
                     display: flex;
-                    flex-direction: row;
-                    gap: 3%;
+                    gap: 2%;
                 }
+
+                .services__web {
+                    grid-row-start: 1;
+                    grid-row-end: 3;
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    width: 100%;
+                    height: 100%;
+                    .image-container {
+                        width: 100%;
+                        height: 100%;
+                        picture, .service--image {
+                            width: 100%;
+                            height: auto;
+                            display: block;
+                        }
+                    }
+                }
+
+                .services__app {
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    width: 100%;
+                    height: 100%;
+                }
+                .services__graphic {
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                // .column-two {
+                //     width: 100%;
+                //     display: flex;
+                //     flex-direction: row;
+                //     gap: 3%;
+                // }
 
                 .desktop-view {
                     flex-direction: column;
@@ -569,18 +612,21 @@
         }
 
         .talent {
-            width: 95%;
+            width: 100%;
             margin: 0 auto;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 5rem;
+
             .talent__photo img{
+                max-height: auto;
+                max-width: 100%;
                 display: block;
                 border-radius: 15px 0 0 15px;
-
             }
+
             .talent__desc {
                 width: 70%;
                 padding: 4rem;

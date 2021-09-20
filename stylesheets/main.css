@@ -498,25 +498,62 @@
     margin: 2rem 0 0 0;
   }
   body .main .services {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 3%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    justify-items: stretch;
+    grid-gap: 2%;
   }
-  body .main .services .column-two {
-    width: 100%;
+  body .main .services .option {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 3%;
+    gap: 2%;
+  }
+  body .main .services .services__web {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 3;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%;
+    height: 100%;
+  }
+  body .main .services .services__web .image-container {
+    width: 100%;
+    height: 100%;
+  }
+  body .main .services .services__web .image-container picture, body .main .services .services__web .image-container .service--image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  body .main .services .services__app {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+    width: 100%;
+    height: 100%;
+  }
+  body .main .services .services__graphic {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+    width: 100%;
+    height: 100%;
   }
   body .main .services .desktop-view {
     -webkit-box-orient: vertical;
@@ -631,7 +668,7 @@
     border-radius: 0 15px 15px 0;
   }
   .main .talent {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -649,6 +686,8 @@
     margin-bottom: 5rem;
   }
   .main .talent .talent__photo img {
+    max-height: auto;
+    max-width: 100%;
     display: block;
     border-radius: 15px 0 0 15px;
   }
@@ -920,12 +959,11 @@
 
 .talent__photo {
   width: 100%;
-  height: 100%;
 }
 
 .talent__photo img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
 }
 
@@ -1011,9 +1049,13 @@
   margin-bottom: 5rem;
 }
 
+.deal .deal__photo {
+  width: 100%;
+}
+
 .deal .deal__photo img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
 }
 
@@ -1310,7 +1352,7 @@ input[type=number] {
 
 .mobile-view {
   position: absolute;
-  top: 5rem;
+  top: 4rem;
   left: 0;
   background-color: black;
   color: white;
@@ -1482,12 +1524,12 @@ input[type=number] {
           filter: brightness(50%);
 }
 
-.services__app, .services__web, .services__graphic {
+.services__app, .services__graphic {
   position: relative;
   border-radius: 15px;
   text-align: center;
   text-transform: uppercase;
-  width: 100%;
+  width: 90%;
   margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1502,11 +1544,22 @@ input[type=number] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: black;
+}
+
+.services__web {
+  position: relative;
+  border-radius: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 90%;
+  height: auto;
+  margin-bottom: 2rem;
+  background: black;
 }
 
 .services__app:hover, .services__web:hover, .services__graphic:hover {
   cursor: pointer;
-  background: black;
 }
 
 .details {
