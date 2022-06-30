@@ -1,6 +1,6 @@
 # Frontend Mentor - Designo agency website solution
 
-This is a solution to the [Designo agency website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Designo agency website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -27,6 +27,10 @@ Users should be able to:
   - The `Email Address` is not formatted correctly should show "Please use a valid email address"
 - **Bonus**: View actual locations on the locations page maps (we recommend [Leaflet JS](https://leafletjs.com/) for this)
 
+### Screenshot
+
+![](./assets/Designo-Website.png)
+
 ### Links
 
 - Solution URL: (https://github.com/JulianIfesiokwu/Designo-multi-page-website)
@@ -46,19 +50,17 @@ Users should be able to:
 ### What I learned
 
 Where do I start. This project is massive, I have learnt alot while trying to complete this project and you can see
-this with the amount of resources I used. The project thought me about responsive images, 
-SASS, 
+this with the amount of resources I used. The project thought me about responsive images,
+SASS,
 using partials in SASS,
-SVGs, 
+SVGs,
 the advantages of having SVGs in your html rather than using a SVG in an image tag,
 managing css of large scale projects,
 naming classes,
 CSS grid,
 
-
-
-
 ### Continued development
+
 For continued development:
 responsive images,
 absolute and relative positioning,
@@ -127,6 +129,6 @@ https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
 https://learncssgrid.com/
 
 ## Author
+
 - Frontend Mentor - [@egbuna09](https://www.frontendmentor.io/profile/egbuna)
 - Twitter - [@yourusername](https://www.twitter.com/mrjules07)
-
